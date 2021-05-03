@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '3.4.1'
+ModuleVersion = '3.5.1'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -197,15 +197,14 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = '* Added upcoming breaking change warnings on below cmdlets, because the value of ''IdentifierUris'' parameter will need verified domain.
-  - ''New-AzADApplication'' 
-  - ''Update-AzADApplication''
-  - ''New-AzADServicePrincipal''
-  - ''Update-AzADServicePrincipal''
-* Ignored Bicep warning message in error stream if exitcode equals zero.'
+        ReleaseNotes = '* Added parameter ''ObjectType'' for ''New-AzRoleAssignment''
+        * Updated to use SDK version 3.13-preview
+        * Template Spec Versions: Renamed artifacts to linkedTemplates
+        * Template Spec Versions: Renamed ''template'' to ''mainTemplate''
+        * Added support for UIFormDefinition for New-AzTemplateSpec and Set-AzTemplateSpec'
 
         # Prerelease string of this module
-        # Prerelease = ''
+        Prerelease = 'preview'
 
         # Flag to indicate whether the module requires explicit user acceptance for install/update/save
         # RequireLicenseAcceptance = $false

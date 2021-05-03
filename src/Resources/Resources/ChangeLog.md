@@ -17,8 +17,10 @@
     * Overview of change #1
         - Additional information about change #1
 -->
-
 ## Upcoming Release
+
+
+## Version 3.5.1
 * Added parameter `ObjectType` for `New-AzRoleAssignment`
 * Updated to use SDK version 3.13-preview
 * Template Spec Versions: Renamed artifacts to linkedTemplates
