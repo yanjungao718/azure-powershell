@@ -1,6 +1,6 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell;
+    using Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell;
 
     /// <summary>Set of rules for sending logs for the Monitor resource.</summary>
     [System.ComponentModel.TypeConverter(typeof(LogRulesTypeConverter))]
@@ -56,27 +56,27 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         partial void OverrideToString(ref string stringResult, ref bool returnNow);
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LogRules"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LogRules"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRules" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRules" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRules DeserializeFromDictionary(global::System.Collections.IDictionary content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRules DeserializeFromDictionary(global::System.Collections.IDictionary content)
         {
             return new LogRules(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LogRules"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LogRules"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRules" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRules" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRules DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRules DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
         {
             return new LogRules(content);
         }
@@ -86,31 +86,10 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// </summary>
         /// <param name="jsonText">a string containing a JSON serialized instance of this model.</param>
         /// <returns>an instance of the <see cref="className" /> model class.</returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRules FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode.Parse(jsonText));
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRules FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode.Parse(jsonText));
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LogRules"
-        /// />.
-        /// </summary>
-        /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
-        internal LogRules(global::System.Collections.IDictionary content)
-        {
-            bool returnNow = false;
-            BeforeDeserializeDictionary(content, ref returnNow);
-            if (returnNow)
-            {
-                return;
-            }
-            // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendAadLog = (bool?) content.GetValueForProperty("SendAadLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendAadLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog = (bool?) content.GetValueForProperty("SendSubscriptionLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog = (bool?) content.GetValueForProperty("SendResourceLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).FilteringTag = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IFilteringTag[]) content.GetValueForProperty("FilteringTag",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).FilteringTag, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IFilteringTag>(__y, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTagTypeConverter.ConvertFrom));
-            AfterDeserializeDictionary(content);
-        }
-
-        /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LogRules"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LogRules"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
@@ -123,17 +102,38 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendAadLog = (bool?) content.GetValueForProperty("SendAadLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendAadLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog = (bool?) content.GetValueForProperty("SendSubscriptionLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog = (bool?) content.GetValueForProperty("SendResourceLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).FilteringTag = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IFilteringTag[]) content.GetValueForProperty("FilteringTag",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILogRulesInternal)this).FilteringTag, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IFilteringTag>(__y, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTagTypeConverter.ConvertFrom));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendAadLog = (bool?) content.GetValueForProperty("SendAadLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendAadLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog = (bool?) content.GetValueForProperty("SendSubscriptionLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog = (bool?) content.GetValueForProperty("SendResourceLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).FilteringTag = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag[]) content.GetValueForProperty("FilteringTag",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).FilteringTag, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag>(__y, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTagTypeConverter.ConvertFrom));
             AfterDeserializePSObject(content);
+        }
+
+        /// <summary>
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LogRules"
+        /// />.
+        /// </summary>
+        /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
+        internal LogRules(global::System.Collections.IDictionary content)
+        {
+            bool returnNow = false;
+            BeforeDeserializeDictionary(content, ref returnNow);
+            if (returnNow)
+            {
+                return;
+            }
+            // actually deserialize
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendAadLog = (bool?) content.GetValueForProperty("SendAadLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendAadLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog = (bool?) content.GetValueForProperty("SendSubscriptionLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendSubscriptionLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog = (bool?) content.GetValueForProperty("SendResourceLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).SendResourceLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).FilteringTag = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag[]) content.GetValueForProperty("FilteringTag",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILogRulesInternal)this).FilteringTag, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag>(__y, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTagTypeConverter.ConvertFrom));
+            AfterDeserializeDictionary(content);
         }
 
         /// <summary>Serializes this instance to a json string.</summary>
 
         /// <returns>a <see cref="System.String" /> containing this model serialized to JSON text.</returns>
-        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode.IncludeAll)?.ToString();
+        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode.IncludeAll)?.ToString();
 
         public override string ToString()
         {

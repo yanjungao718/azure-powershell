@@ -1,6 +1,6 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell;
+    using Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell;
 
     [System.ComponentModel.TypeConverter(typeof(DatadogSetPasswordLinkTypeConverter))]
     public partial class DatadogSetPasswordLink
@@ -55,7 +55,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         partial void OverrideToString(ref string stringResult, ref bool returnNow);
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSetPasswordLink"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSetPasswordLink"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
@@ -68,12 +68,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink = (string) content.GetValueForProperty("SetPasswordLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink = (string) content.GetValueForProperty("SetPasswordLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink, global::System.Convert.ToString);
             AfterDeserializeDictionary(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSetPasswordLink"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSetPasswordLink"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
@@ -86,32 +86,32 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink = (string) content.GetValueForProperty("SetPasswordLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink = (string) content.GetValueForProperty("SetPasswordLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLinkInternal)this).SetPasswordLink, global::System.Convert.ToString);
             AfterDeserializePSObject(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSetPasswordLink"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSetPasswordLink"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLink" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLink" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLink DeserializeFromDictionary(global::System.Collections.IDictionary content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLink DeserializeFromDictionary(global::System.Collections.IDictionary content)
         {
             return new DatadogSetPasswordLink(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSetPasswordLink"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSetPasswordLink"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLink" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLink" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLink DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLink DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
         {
             return new DatadogSetPasswordLink(content);
         }
@@ -121,12 +121,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// </summary>
         /// <param name="jsonText">a string containing a JSON serialized instance of this model.</param>
         /// <returns>an instance of the <see cref="className" /> model class.</returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSetPasswordLink FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode.Parse(jsonText));
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSetPasswordLink FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode.Parse(jsonText));
 
         /// <summary>Serializes this instance to a json string.</summary>
 
         /// <returns>a <see cref="System.String" /> containing this model serialized to JSON text.</returns>
-        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode.IncludeAll)?.ToString();
+        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode.IncludeAll)?.ToString();
 
         public override string ToString()
         {

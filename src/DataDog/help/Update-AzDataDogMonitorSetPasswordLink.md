@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/update-azdatadogmonitorsetpasswordlink
 schema: 2.0.0
 ---
 
-# Update-AzDataDogMonitorSetPasswordLink
+# Update-AzDatadogMonitorSetPasswordLink
 
 ## SYNOPSIS
 Refresh the set password link and return a latest one.
@@ -14,13 +14,13 @@ Refresh the set password link and return a latest one.
 
 ### Refresh (Default)
 ```
-Update-AzDataDogMonitorSetPasswordLink -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+Update-AzDatadogMonitorSetPasswordLink -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RefreshViaIdentity
 ```
-Update-AzDataDogMonitorSetPasswordLink -InputObject <IDataDogIdentity> [-DefaultProfile <PSObject>] [-Confirm]
+Update-AzDatadogMonitorSetPasswordLink -InputObject <IDatadogIdentity> [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
@@ -31,18 +31,18 @@ Refresh the set password link and return a latest one.
 
 ### Example 1: Refresh the set password link and return a latest one
 ```powershell
-PS C:\> Update-AzDataDogMonitorSetPasswordLink -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Update-AzDatadogMonitorSetPasswordLink -ResourceGroupName azure-rg-Datadog -Name Datadog
 
-https://us3.datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
+https://us3.Datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 This command refresh the set password link and return a latest one.
 
 ### Example 2: Refresh the set password link and return a latest one by pipeline
 ```powershell
-PS C:\> Get-AzDataDogMonitor -ResourceGroupName azure-rg-datadog -Name datadog | Update-AzDataDogMonitorSetPasswordLink
+PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Update-AzDatadogMonitorSetPasswordLink
 
-https://us3.datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
+https://us3.Datadoghq.com/account/reset_password/xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 This command refresh the set password link and return a latest one by pipeline.
@@ -69,7 +69,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: RefreshViaIdentity
 Aliases:
 
@@ -162,7 +162,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
@@ -177,7 +177,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name

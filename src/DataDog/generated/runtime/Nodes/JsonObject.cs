@@ -7,7 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json
 {
     public partial class JsonObject : JsonNode, IDictionary<string, JsonNode>
     {

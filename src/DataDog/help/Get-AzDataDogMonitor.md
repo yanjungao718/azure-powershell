@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmonitor
 schema: 2.0.0
 ---
 
-# Get-AzDataDogMonitor
+# Get-AzDatadogMonitor
 
 ## SYNOPSIS
 Get the properties of a specific monitor resource.
@@ -14,23 +14,23 @@ Get the properties of a specific monitor resource.
 
 ### List (Default)
 ```
-Get-AzDataDogMonitor [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzDatadogMonitor [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-AzDataDogMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzDatadogMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzDataDogMonitor -InputObject <IDataDogIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzDatadogMonitor -InputObject <IDatadogIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### List1
 ```
-Get-AzDataDogMonitor -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+Get-AzDatadogMonitor -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
@@ -41,44 +41,44 @@ Get the properties of a specific monitor resource.
 
 ### Example 1: List all monitor resources under a subscription
 ```powershell
-PS C:\> Get-AzDataDogMonitor
+PS C:\> Get-AzDatadogMonitor
 
 Location    Name         Type
 --------    ----         ----
-eastus2euap datadog microsoft.datadog/monitors
+eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
 This command lists all monitor resources under a subscription.
 
 ### Example 2: List monitor resources under a resource group
 ```powershell
-PS C:\> Get-AzDataDogMonitor -ResourceGroupName azure-rg-datadog
+PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog
 
 Location    Name         Type
 --------    ----         ----
-eastus2euap datadog microsoft.datadog/monitors
+eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
 This command lists all monitor resources under a resource group.
 
 ### Example 3: Get the properties of a specific monitor resource
 ```powershell
-PS C:\> Get-AzDataDogMonitor -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog
 
 Location    Name         Type
 --------    ----         ----
-eastus2euap datadog microsoft.datadog/monitors
+eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
 This command gets the properties of a specific monitor resource.
 
 ### Example 4: Get the properties of a specific monitor resource by pipeline
 ```powershell
-PS C:\> Get-AzDataDogMonitor -ResourceGroupName azure-rg-datadog -Name datadog | Get-AzDataDogMonitor
+PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Get-AzDatadogMonitor
 
 Location    Name         Type
 --------    ----         ----
-eastus2euap datadog microsoft.datadog/monitors
+eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
 This command gets the properties of a specific monitor resource by pipeline.
@@ -105,7 +105,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -167,11 +167,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogMonitorResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogMonitorResource
 
 ## NOTES
 
@@ -182,7 +182,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name

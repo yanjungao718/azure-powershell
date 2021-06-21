@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogtagrule
 schema: 2.0.0
 ---
 
-# Get-AzDataDogTagRule
+# Get-AzDatadogTagRule
 
 ## SYNOPSIS
 Get a tag rule set for a given monitor resource.
@@ -14,19 +14,19 @@ Get a tag rule set for a given monitor resource.
 
 ### List (Default)
 ```
-Get-AzDataDogTagRule -MonitorName <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzDatadogTagRule -MonitorName <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-AzDataDogTagRule -MonitorName <String> -Name <String> -ResourceGroupName <String>
+Get-AzDatadogTagRule -MonitorName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzDataDogTagRule -InputObject <IDataDogIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzDatadogTagRule -InputObject <IDatadogIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,33 +36,33 @@ Get a tag rule set for a given monitor resource.
 
 ### Example 1: List all tag rules set for a given monitor resource
 ```powershell
-PS C:\> Get-AzDataDogTagRule -ResourceGroupName azure-rg-datadog -MonitorName datadog
+PS C:\> Get-AzDatadogTagRule -ResourceGroupName azure-rg-Datadog -MonitorName Datadog
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/tagrules
+default microsoft.Datadog/monitors/tagrules
 ```
 
 This command lists all tag rules set for a given monitor resource.
 
 ### Example 2: Get a tag rule set for a given monitor resource
 ```powershell
-PS C:\> Get-AzDataDogTagRule -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default'
+PS C:\> Get-AzDatadogTagRule -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default'
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/tagrules
+default microsoft.Datadog/monitors/tagrules
 ```
 
 This command gets a tag rule set for a given monitor resource.
 
 ### Example 3: Get a tag rule set for a given monitor resource by pipeline
 ```powershell
-PS C:\> Get-AzDataDogTagRule -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default' | Get-AzDataDogTagRule
+PS C:\> Get-AzDatadogTagRule -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' | Get-AzDatadogTagRule
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/tagrules
+default microsoft.Datadog/monitors/tagrules
 ```
 
 This command gets a tag rule set for a given monitor resource by pipeline.
@@ -89,7 +89,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -166,11 +166,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoringTagRules
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoringTagRules
 
 ## NOTES
 
@@ -181,7 +181,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name

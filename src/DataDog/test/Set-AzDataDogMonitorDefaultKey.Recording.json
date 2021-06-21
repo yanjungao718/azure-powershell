@@ -1,8 +1,8 @@
 {
-  "Set-AzDataDogMonitorDefaultKey+[NoContext]+SetExpanded+$POST+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/setDefaultKey?api-version=2021-03-01+1": {
+  "Set-AzDatadogMonitorDefaultKey+[NoContext]+SetExpanded+$POST+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/setDefaultKey?api-version=2021-03-01+1": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/setDefaultKey?api-version=2021-03-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/setDefaultKey?api-version=2021-03-01",
       "Content": "{\r\n  \"key\": \"xxxxxxxxxxxxxxxxxxxxxx\"\r\n}",
       "isContentBase64": false,
       "Headers": {

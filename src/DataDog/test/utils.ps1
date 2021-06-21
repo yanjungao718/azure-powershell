@@ -15,7 +15,7 @@ function setupEnv() {
     $env.enterpriseAppId = '00000000-0000-0000-0000-000000000000'
     # For any resources you created for test, you should add it to $env here.
     # Generate random string for use in test.
-    $env.resourceGroup = 'datadogmonitor-rg-' + (RandomString -allChars $false -len 6)
+    $env.resourceGroup = 'Datadogmonitor-rg-' + (RandomString -allChars $false -len 6)
     $env.monitorName01 = 'monitor'+ (RandomString -allChars $false -len 6)
     $env.monitorName02 = 'monitor'+ (RandomString -allChars $false -len 6)
     $env.monitorName03 = 'monitor'+ (RandomString -allChars $false -len 6)
@@ -26,19 +26,19 @@ function setupEnv() {
 
     # Create two monitor for use in test.
     Write-Host -ForegroundColor Green "Create two $($env.monitorName01) and $($env.monitorName02) for test."
-    New-AzDataDogMonitor -ResourceGroupName $env.resourceGroup -Name $env.monitorName01 -SkuName 'drawdown_testing_20200904_Monthly' -Location 'eastus2euap' -UserInfoEmailAddress 'user@microsoft.com' -UserInfoName 'user' -UserInfoPhoneNumber '11111111111' -IdentityType SystemAssigned
-    New-AzDataDogMonitor -ResourceGroupName $env.resourceGroup -Name $env.monitorName02 -SkuName 'drawdown_testing_20200904_Monthly' -Location 'eastus2euap' -UserInfoEmailAddress 'user@microsoft.com' -UserInfoName 'user' -UserInfoPhoneNumber '11111111111' -IdentityType SystemAssigned
+    New-AzDatadogMonitor -ResourceGroupName $env.resourceGroup -Name $env.monitorName01 -SkuName 'drawdown_testing_20200904_Monthly' -Location 'eastus2euap' -UserInfoEmailAddress 'user@microsoft.com' -UserInfoName 'user' -UserInfoPhoneNumber '11111111111' -IdentityType SystemAssigned
+    New-AzDatadogMonitor -ResourceGroupName $env.resourceGroup -Name $env.monitorName02 -SkuName 'drawdown_testing_20200904_Monthly' -Location 'eastus2euap' -UserInfoEmailAddress 'user@microsoft.com' -UserInfoName 'user' -UserInfoPhoneNumber '11111111111' -IdentityType SystemAssigned
     
     # Eable SSO 
     Write-Host -ForegroundColor Green "Enable SSO for $($env.monitorName01) monitor."
-    New-AzDataDogSingleSignOnConfiguration -ResourceGroupName $env.resourceGroup -MonitorName $env.monitorName01 -Name 'default' -SingleSignOnState Enable -EnterpriseAppId $env.enterpriseAppId
+    New-AzDatadogSingleSignOnConfiguration -ResourceGroupName $env.resourceGroup -MonitorName $env.monitorName01 -Name 'default' -SingleSignOnState Enable -EnterpriseAppId $env.enterpriseAppId
     
     # Create tag rules
     Write-Host -ForegroundColor Green "Create default tag rule $($env.monitorName01) monitor."
     $ftobjArray = @()
-    $ftobjArray += New-AzDataDogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
-    $ftobjArray += New-AzDataDogFilteringTagObject -Action "Exclude" -Value "Dev" -Name "Environment"
-    New-AzDataDogTagRule -ResourceGroupName $env.resourceGroup -MonitorName $env.monitorName01 -Name 'default' -LogRuleFilteringTag $ftobjArray
+    $ftobjArray += New-AzDatadogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
+    $ftobjArray += New-AzDatadogFilteringTagObject -Action "Exclude" -Value "Dev" -Name "Environment"
+    New-AzDatadogTagRule -ResourceGroupName $env.resourceGroup -MonitorName $env.monitorName01 -Name 'default' -LogRuleFilteringTag $ftobjArray
 
     $envFile = 'env.json'
     if ($TestMode -eq 'live') {

@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 using System.Management.Automation;
-using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell.PsHelpers;
+using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell.PsHelpers;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell
 {
   [Cmdlet(VerbsCommon.Get, "ModuleGuid")]
   [DoNotExport]

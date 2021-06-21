@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/set-azdatadogmonitordefaultkey
 schema: 2.0.0
 ---
 
-# Set-AzDataDogMonitorDefaultKey
+# Set-AzDatadogMonitorDefaultKey
 
 ## SYNOPSIS
 Set the default api key.
@@ -13,7 +13,7 @@ Set the default api key.
 ## SYNTAX
 
 ```
-Set-AzDataDogMonitorDefaultKey -MonitorName <String> -ResourceGroupName <String> -Key <String>
+Set-AzDatadogMonitorDefaultKey -MonitorName <String> -ResourceGroupName <String> -Key <String>
  [-SubscriptionId <String>] [-CreatedAt <String>] [-CreatedBy <String>] [-Name <String>]
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
@@ -25,7 +25,7 @@ Set the default api key.
 
 ### Example 1: Set the default api key for monitor resource
 ```powershell
-PS C:\> Set-AzDataDogMonitorDefaultKey -ResourceGroupName azure-rg-datadog -MonitorName datadog -Key 'xxxxxxxxxxxxxxxxxxxxxx'
+PS C:\> Set-AzDatadogMonitorDefaultKey -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Key 'xxxxxxxxxxxxxxxxxxxxxx'
 
 Created CreatedBy Key                              Name
 ------- --------- ---                              ----

@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmonitorlinkedresource
 schema: 2.0.0
 ---
 
-# Get-AzDataDogMonitorLinkedResource
+# Get-AzDatadogMonitorLinkedResource
 
 ## SYNOPSIS
 List all Azure resources associated to the same Datadog organization as the target resource.
@@ -13,7 +13,7 @@ List all Azure resources associated to the same Datadog organization as the targ
 ## SYNTAX
 
 ```
-Get-AzDataDogMonitorLinkedResource -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzDatadogMonitorLinkedResource -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -24,19 +24,19 @@ List all Azure resources associated to the same Datadog organization as the targ
 
 ### Example 1: List all Azure resources associated to the same Datadog organization as the target resource
 ```powershell
-PS C:\> Get-AzDataDogMonitorLinkedResource -ResourceGroupName azure-rg-datadog -Name lucasdatadog
+PS C:\> Get-AzDatadogMonitorLinkedResource -ResourceGroupName azure-rg-Datadog -Name lucasDatadog
 
 Id
 --
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/EUAP-ACR-01266F2538192A/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-ACR-0126693370263
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-SUB-01278F01924690/PROVIDERS/MICROSOFT.DATADOG/MONITORS/SUB01273EE24900C6832
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-SSO-E4E2467832A/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-CREATE-SSO-53326702
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-MUL-ACR-01277F790629/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-ACR1-A3C8604150D
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-68A6706056D95/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-CREATE-2E312735B8
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-MUL-ACR-01279F943670/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-ACR2-D46323262B4
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-8288834488516/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-CREATE-C7585255D1
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-SSO-6E6618601FF/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-CREATE-SSO-C5065109
-/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-MUL-ACR-012774705865/PROVIDERS/MICROSOFT.DATADOG/MONITORS/LIFTR-ACR2-E2560749186
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/EUAP-ACR-01266F2538192A/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-ACR-0126693370263
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-SUB-01278F01924690/PROVIDERS/MICROSOFT.Datadog/MONITORS/SUB01273EE24900C6832
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-SSO-E4E2467832A/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-CREATE-SSO-53326702
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-MUL-ACR-01277F790629/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-ACR1-A3C8604150D
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-68A6706056D95/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-CREATE-2E312735B8
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-MUL-ACR-01279F943670/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-ACR2-D46323262B4
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-8288834488516/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-CREATE-C7585255D1
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/CREATE-SSO-6E6618601FF/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-CREATE-SSO-C5065109
+/SUBSCRIPTIONS/xxxxxxxxxxxxxx-xxxxxxx-xxxxxx/RESOURCEGROUPS/PROD-MUL-ACR-012774705865/PROVIDERS/MICROSOFT.Datadog/MONITORS/LIFTR-ACR2-E2560749186
 ```
 
 This command lists all Azure resources associated to the same Datadog organization as the target resource.
@@ -142,7 +142,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ILinkedResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ILinkedResource
 
 ## NOTES
 

@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmonitorhost
 schema: 2.0.0
 ---
 
-# Get-AzDataDogMonitorHost
+# Get-AzDatadogMonitorHost
 
 ## SYNOPSIS
 List the hosts for a given monitor resource.
@@ -13,7 +13,7 @@ List the hosts for a given monitor resource.
 ## SYNTAX
 
 ```
-Get-AzDataDogMonitorHost -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzDatadogMonitorHost -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ List the hosts for a given monitor resource.
 
 ### Example 1: List the hosts for a given monitor resource
 ```powershell
-PS C:\> Get-AzDataDogMonitorHost -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Get-AzDatadogMonitorHost -ResourceGroupName azure-rg-Datadog -Name Datadog
 
 ```
 
@@ -131,7 +131,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHost
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHost
 
 ## NOTES
 

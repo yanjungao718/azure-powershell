@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Management.Automation;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell
 {
     internal class PsHelpInfo
     {

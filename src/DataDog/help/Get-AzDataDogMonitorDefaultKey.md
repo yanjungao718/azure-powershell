@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmonitordefaultkey
 schema: 2.0.0
 ---
 
-# Get-AzDataDogMonitorDefaultKey
+# Get-AzDatadogMonitorDefaultKey
 
 ## SYNOPSIS
 Get the default api key.
@@ -14,13 +14,13 @@ Get the default api key.
 
 ### Get (Default)
 ```
-Get-AzDataDogMonitorDefaultKey -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzDatadogMonitorDefaultKey -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzDataDogMonitorDefaultKey -InputObject <IDataDogIdentity> [-DefaultProfile <PSObject>] [-Confirm]
+Get-AzDatadogMonitorDefaultKey -InputObject <IDatadogIdentity> [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Get the default api key.
 
 ### Example 1: Get the default api key
 ```powershell
-PS C:\> Get-AzDataDogMonitorDefaultKey -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Get-AzDatadogMonitorDefaultKey -ResourceGroupName azure-rg-Datadog -Name Datadog
 
 Created CreatedBy Key                              Name
 ------- --------- ---                              ----
@@ -42,7 +42,7 @@ This command gets the default api key.
 
 ### Example 2: Get the default api key by pipeline
 ```powershell
-PS C:\> Get-AzDataDogMonitor -ResourceGroupName azure-rg-datadog -Name datadog | Get-AzDataDogMonitorDefaultKey
+PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Get-AzDatadogMonitorDefaultKey
 
 Created CreatedBy Key                              Name
 ------- --------- ---                              ----
@@ -73,7 +73,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -166,11 +166,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogApiKey
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogApiKey
 
 ## NOTES
 
@@ -181,7 +181,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name

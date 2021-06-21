@@ -19,28 +19,28 @@ Configures single-sign-on for this resource.
 .Description
 Configures single-sign-on for this resource.
 .Example
-PS C:\> New-AzDataDogSingleSignOnConfiguration -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
+PS C:\> New-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/singlesignonconfigurations
+default microsoft.Datadog/monitors/singlesignonconfigurations
 .Example
-PS C:\> Get-AzDataDogSingleSignOnConfiguration -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default' | New-AzDataDogSingleSignOnConfiguration -SingleSignOnState Disable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
+PS C:\> Get-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' | New-AzDatadogSingleSignOnConfiguration -SingleSignOnState Disable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/singlesignonconfigurations
+default microsoft.Datadog/monitors/singlesignonconfigurations
 
 .Inputs
-Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResource
+Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource
 .Notes
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   [ConfigurationName <String>]: Configuration name
   [Id <String>]: Resource identity path
   [MonitorName <String>]: Monitor resource name
@@ -50,111 +50,111 @@ INPUTOBJECT <IDataDogIdentity>: Identity Parameter
 .Link
 https://docs.microsoft.com/powershell/module/az.datadog/new-azdatadogsinglesignonconfiguration
 #>
-function New-AzDataDogSingleSignOnConfiguration {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResource])]
+function New-AzDatadogSingleSignOnConfiguration {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource])]
 [CmdletBinding(DefaultParameterSetName='CreateExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter(ParameterSetName='CreateExpanded', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
     [System.String]
     # Monitor resource name
     ${MonitorName},
 
     [Parameter(ParameterSetName='CreateExpanded', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
     [System.String]
     # Configuration name
     ${Name},
 
     [Parameter(ParameterSetName='CreateExpanded', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
     [System.String]
     # The name of the resource group.
     # The name is case insensitive.
     ${ResourceGroupName},
 
     [Parameter(ParameterSetName='CreateExpanded')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
     [System.String]
     # The ID of the target subscription.
     ${SubscriptionId},
 
     [Parameter(ParameterSetName='CreateViaIdentityExpanded', Mandatory, ValueFromPipeline)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity]
     # Identity Parameter
     # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
     ${InputObject},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # The Id of the Enterprise App used for Single sign-on.
     ${EnterpriseAppId},
 
     [Parameter()]
-    [ArgumentCompleter([Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.SingleSignOnStates])]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.SingleSignOnStates]
+    [ArgumentCompleter([Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.SingleSignOnStates])]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.SingleSignOnStates]
     # Various states of the SSO resource
     ${SingleSignOnState},
 
     [Parameter()]
     [Alias('AzureRMContext', 'AzureCredential')]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Azure')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Azure')]
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Run the command as a job
     ${AsJob},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Wait for .NET debugger to attach
     ${Break},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SendAsyncStep[]]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be appended to the front of the pipeline
     ${HttpPipelineAppend},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SendAsyncStep[]]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Run the command asynchronously
     ${NoWait},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Uri]
     # The URI for the proxy server to use
     ${Proxy},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.PSCredential]
     # Credentials for a proxy server to use for the remote call
     ${ProxyCredential},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Use the default credentials for the proxy
     ${ProxyUseDefaultCredentials}
@@ -168,8 +168,8 @@ begin {
         }
         $parameterSet = $PSCmdlet.ParameterSetName
         $mapping = @{
-            CreateExpanded = 'Az.DataDog.private\New-AzDataDogSingleSignOnConfiguration_CreateExpanded';
-            CreateViaIdentityExpanded = 'Az.DataDog.private\New-AzDataDogSingleSignOnConfiguration_CreateViaIdentityExpanded';
+            CreateExpanded = 'Az.Datadog.private\New-AzDatadogSingleSignOnConfiguration_CreateExpanded';
+            CreateViaIdentityExpanded = 'Az.Datadog.private\New-AzDatadogSingleSignOnConfiguration_CreateViaIdentityExpanded';
         }
         if (('CreateExpanded') -contains $parameterSet -and -not $PSBoundParameters.ContainsKey('SubscriptionId')) {
             $PSBoundParameters['SubscriptionId'] = (Get-AzContext).Subscription.Id

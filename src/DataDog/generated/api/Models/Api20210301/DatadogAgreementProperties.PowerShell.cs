@@ -1,6 +1,6 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell;
+    using Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell;
 
     /// <summary>Terms properties.</summary>
     [System.ComponentModel.TypeConverter(typeof(DatadogAgreementPropertiesTypeConverter))]
@@ -56,7 +56,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         partial void OverrideToString(ref string stringResult, ref bool returnNow);
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementProperties"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementProperties"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
@@ -69,19 +69,19 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher = (string) content.GetValueForProperty("Publisher",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product = (string) content.GetValueForProperty("Product",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan = (string) content.GetValueForProperty("Plan",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink = (string) content.GetValueForProperty("LicenseTextLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink = (string) content.GetValueForProperty("PrivacyPolicyLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime = (global::System.DateTime?) content.GetValueForProperty("RetrieveDatetime",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime, (v) => v is global::System.DateTime _v ? _v : global::System.Xml.XmlConvert.ToDateTime( v.ToString() , global::System.Xml.XmlDateTimeSerializationMode.Unspecified));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature = (string) content.GetValueForProperty("Signature",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted = (bool?) content.GetValueForProperty("Accepted",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher = (string) content.GetValueForProperty("Publisher",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product = (string) content.GetValueForProperty("Product",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan = (string) content.GetValueForProperty("Plan",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink = (string) content.GetValueForProperty("LicenseTextLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink = (string) content.GetValueForProperty("PrivacyPolicyLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime = (global::System.DateTime?) content.GetValueForProperty("RetrieveDatetime",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime, (v) => v is global::System.DateTime _v ? _v : global::System.Xml.XmlConvert.ToDateTime( v.ToString() , global::System.Xml.XmlDateTimeSerializationMode.Unspecified));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature = (string) content.GetValueForProperty("Signature",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted = (bool?) content.GetValueForProperty("Accepted",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
             AfterDeserializeDictionary(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementProperties"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementProperties"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
@@ -94,39 +94,39 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher = (string) content.GetValueForProperty("Publisher",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product = (string) content.GetValueForProperty("Product",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan = (string) content.GetValueForProperty("Plan",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink = (string) content.GetValueForProperty("LicenseTextLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink = (string) content.GetValueForProperty("PrivacyPolicyLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime = (global::System.DateTime?) content.GetValueForProperty("RetrieveDatetime",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime, (v) => v is global::System.DateTime _v ? _v : global::System.Xml.XmlConvert.ToDateTime( v.ToString() , global::System.Xml.XmlDateTimeSerializationMode.Unspecified));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature = (string) content.GetValueForProperty("Signature",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted = (bool?) content.GetValueForProperty("Accepted",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher = (string) content.GetValueForProperty("Publisher",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Publisher, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product = (string) content.GetValueForProperty("Product",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Product, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan = (string) content.GetValueForProperty("Plan",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Plan, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink = (string) content.GetValueForProperty("LicenseTextLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).LicenseTextLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink = (string) content.GetValueForProperty("PrivacyPolicyLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).PrivacyPolicyLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime = (global::System.DateTime?) content.GetValueForProperty("RetrieveDatetime",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).RetrieveDatetime, (v) => v is global::System.DateTime _v ? _v : global::System.Xml.XmlConvert.ToDateTime( v.ToString() , global::System.Xml.XmlDateTimeSerializationMode.Unspecified));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature = (string) content.GetValueForProperty("Signature",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Signature, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted = (bool?) content.GetValueForProperty("Accepted",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal)this).Accepted, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
             AfterDeserializePSObject(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementProperties"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementProperties"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementProperties" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementProperties" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementProperties DeserializeFromDictionary(global::System.Collections.IDictionary content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementProperties DeserializeFromDictionary(global::System.Collections.IDictionary content)
         {
             return new DatadogAgreementProperties(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementProperties"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementProperties"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementProperties" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementProperties" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementProperties DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementProperties DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
         {
             return new DatadogAgreementProperties(content);
         }
@@ -136,12 +136,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// </summary>
         /// <param name="jsonText">a string containing a JSON serialized instance of this model.</param>
         /// <returns>an instance of the <see cref="className" /> model class.</returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementProperties FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode.Parse(jsonText));
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementProperties FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode.Parse(jsonText));
 
         /// <summary>Serializes this instance to a json string.</summary>
 
         /// <returns>a <see cref="System.String" /> containing this model serialized to JSON text.</returns>
-        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode.IncludeAll)?.ToString();
+        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode.IncludeAll)?.ToString();
 
         public override string ToString()
         {

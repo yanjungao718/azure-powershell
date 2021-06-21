@@ -1,6 +1,6 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell;
+    using Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell;
 
     /// <summary>Response of a list operation.</summary>
     [System.ComponentModel.TypeConverter(typeof(DatadogSingleSignOnResourceListResponseTypeConverter))]
@@ -56,7 +56,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         partial void OverrideToString(ref string stringResult, ref bool returnNow);
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
@@ -69,13 +69,13 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResource[]) content.GetValueForProperty("Value",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResource>(__y, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceTypeConverter.ConvertFrom));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink = (string) content.GetValueForProperty("NextLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource[]) content.GetValueForProperty("Value",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource>(__y, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceTypeConverter.ConvertFrom));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink = (string) content.GetValueForProperty("NextLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink, global::System.Convert.ToString);
             AfterDeserializeDictionary(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
@@ -88,35 +88,35 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResource[]) content.GetValueForProperty("Value",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResource>(__y, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceTypeConverter.ConvertFrom));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink = (string) content.GetValueForProperty("NextLink",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource[]) content.GetValueForProperty("Value",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).Value, __y => TypeConverterExtensions.SelectToArray<Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource>(__y, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceTypeConverter.ConvertFrom));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink = (string) content.GetValueForProperty("NextLink",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponseInternal)this).NextLink, global::System.Convert.ToString);
             AfterDeserializePSObject(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse"
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse"
         /// />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse DeserializeFromDictionary(global::System.Collections.IDictionary content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse DeserializeFromDictionary(global::System.Collections.IDictionary content)
         {
             return new DatadogSingleSignOnResourceListResponse(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceListResponse"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse"
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse"
         /// />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
         {
             return new DatadogSingleSignOnResourceListResponse(content);
         }
@@ -127,12 +127,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// </summary>
         /// <param name="jsonText">a string containing a JSON serialized instance of this model.</param>
         /// <returns>an instance of the <see cref="className" /> model class.</returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode.Parse(jsonText));
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResourceListResponse FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode.Parse(jsonText));
 
         /// <summary>Serializes this instance to a json string.</summary>
 
         /// <returns>a <see cref="System.String" /> containing this model serialized to JSON text.</returns>
-        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode.IncludeAll)?.ToString();
+        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode.IncludeAll)?.ToString();
 
         public override string ToString()
         {

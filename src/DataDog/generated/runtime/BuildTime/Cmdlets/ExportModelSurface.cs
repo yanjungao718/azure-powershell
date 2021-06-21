@@ -10,7 +10,7 @@ using System.Management.Automation;
 using System.Reflection;
 using System.Text;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell
 {
   [Cmdlet(VerbsData.Export, "ModelSurface")]
   [DoNotExport]
@@ -23,8 +23,8 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell
     [Parameter]
     public bool UseExpandedFormat { get; set; }
 
-    private const string ModelNamespace = @"Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models";
-    private const string SupportNamespace = @"Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support";
+    private const string ModelNamespace = @"Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models";
+    private const string SupportNamespace = @"Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support";
 
     protected override void ProcessRecord()
     {

@@ -1,10 +1,10 @@
 <!-- region Generated -->
-# Az.DataDog
-This directory contains the PowerShell module for the DataDog service.
+# Az.Datadog
+This directory contains the PowerShell module for the Datadog service.
 
 ---
 ## Status
-[![Az.DataDog](https://img.shields.io/powershellgallery/v/Az.DataDog.svg?style=flat-square&label=Az.DataDog "Az.DataDog")](https://www.powershellgallery.com/packages/Az.DataDog/)
+[![Az.Datadog](https://img.shields.io/powershellgallery/v/Az.Datadog.svg?style=flat-square&label=Az.Datadog "Az.Datadog")](https://www.powershellgallery.com/packages/Az.Datadog/)
 
 ## Info
 - Modifiable: yes
@@ -23,7 +23,7 @@ This module was primarily generated via [AutoRest](https://github.com/Azure/auto
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
 
 ## Development
-For information on how to develop for `Az.DataDog`, see [how-to.md](how-to.md).
+For information on how to develop for `Az.Datadog`, see [how-to.md](how-to.md).
 <!-- endregion -->
 
 ### AutoRest Configuration
@@ -36,9 +36,9 @@ require:
 input-file: 
   - $(repo)/specification/datadog/resource-manager/Microsoft.Datadog/stable/2021-03-01/datadog.json
   
-title: DataDog
+title: Datadog
 module-version: 0.1.0
-subject-prefix: $(service-name)
+subject-prefix: Datadog
 nested-object-to-string: true
 identity-correction-for-post: true
 

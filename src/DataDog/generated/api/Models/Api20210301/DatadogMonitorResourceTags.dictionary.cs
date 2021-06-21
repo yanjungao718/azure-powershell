@@ -1,19 +1,19 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Extensions;
+    using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Extensions;
 
     public partial class DatadogMonitorResourceTags :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IAssociativeArray<string>
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IAssociativeArray<string>
     {
         protected global::System.Collections.Generic.Dictionary<global::System.String,string> __additionalProperties = new global::System.Collections.Generic.Dictionary<global::System.String,string>();
 
-        global::System.Collections.Generic.IDictionary<global::System.String,string> Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IAssociativeArray<string>.AdditionalProperties { get => __additionalProperties; }
+        global::System.Collections.Generic.IDictionary<global::System.String,string> Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IAssociativeArray<string>.AdditionalProperties { get => __additionalProperties; }
 
-        int Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IAssociativeArray<string>.Count { get => __additionalProperties.Count; }
+        int Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IAssociativeArray<string>.Count { get => __additionalProperties.Count; }
 
-        global::System.Collections.Generic.IEnumerable<global::System.String> Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IAssociativeArray<string>.Keys { get => __additionalProperties.Keys; }
+        global::System.Collections.Generic.IEnumerable<global::System.String> Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IAssociativeArray<string>.Keys { get => __additionalProperties.Keys; }
 
-        global::System.Collections.Generic.IEnumerable<string> Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IAssociativeArray<string>.Values { get => __additionalProperties.Values; }
+        global::System.Collections.Generic.IEnumerable<string> Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IAssociativeArray<string>.Values { get => __additionalProperties.Values; }
 
         public string this[global::System.String index] { get => __additionalProperties[index]; set => __additionalProperties[index] = value; }
 
@@ -31,7 +31,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         {
             if (null != source)
             {
-                foreach( var property in  Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell.TypeConverterExtensions.GetFilteredProperties(source, new global::System.Collections.Generic.HashSet<global::System.String>() {  } ) )
+                foreach( var property in  Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell.TypeConverterExtensions.GetFilteredProperties(source, new global::System.Collections.Generic.HashSet<global::System.String>() {  } ) )
                 {
                     if ((null != property.Key && null != property.Value))
                     {
@@ -46,7 +46,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         {
             if (null != source)
             {
-                foreach( var property in  Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell.TypeConverterExtensions.GetFilteredProperties(source, new global::System.Collections.Generic.HashSet<global::System.String>() {  } ) )
+                foreach( var property in  Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell.TypeConverterExtensions.GetFilteredProperties(source, new global::System.Collections.Generic.HashSet<global::System.String>() {  } ) )
                 {
                     if ((null != property.Key && null != property.Value))
                     {
@@ -65,6 +65,6 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
 
         /// <param name="source"></param>
 
-        public static implicit operator global::System.Collections.Generic.Dictionary<global::System.String,string>(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResourceTags source) => source.__additionalProperties;
+        public static implicit operator global::System.Collections.Generic.Dictionary<global::System.String,string>(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResourceTags source) => source.__additionalProperties;
     }
 }

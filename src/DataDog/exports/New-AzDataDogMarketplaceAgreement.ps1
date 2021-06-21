@@ -19,73 +19,73 @@ Create Datadog marketplace agreement in the subscription.
 .Description
 Create Datadog marketplace agreement in the subscription.
 .Example
-PS C:\> New-AzDataDogMarketplaceAgreement -Accepted
+PS C:\> New-AzDatadogMarketplaceAgreement -Accepted
 
 Name    Type
 ----    ----
-default microsoft.datadog/agreements
+default microsoft.Datadog/agreements
 
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResource
+Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResource
 .Link
 https://docs.microsoft.com/powershell/module/az.datadog/new-azdatadogmarketplaceagreement
 #>
-function New-AzDataDogMarketplaceAgreement {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResource])]
+function New-AzDatadogMarketplaceAgreement {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResource])]
 [CmdletBinding(DefaultParameterSetName='CreateExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
     [System.String]
     # The ID of the target subscription.
     ${SubscriptionId},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.Management.Automation.SwitchParameter]
     # If any version of the terms have been accepted, otherwise false.
     ${Accepted},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # Link to HTML with Microsoft and Publisher terms.
     ${LicenseTextLink},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # Plan identifier string.
     ${Plan},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # Link to the privacy policy of the publisher.
     ${PrivacyPolicyLink},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # Product identifier string.
     ${Product},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # Publisher identifier string.
     ${Publisher},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.DateTime]
     # Date and time in UTC of when the terms were accepted.
     # This is empty if Accepted is false.
     ${RetrieveDatetime},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # Terms signature.
     ${Signature},
@@ -93,46 +93,46 @@ param(
     [Parameter()]
     [Alias('AzureRMContext', 'AzureCredential')]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Azure')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Azure')]
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Wait for .NET debugger to attach
     ${Break},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SendAsyncStep[]]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be appended to the front of the pipeline
     ${HttpPipelineAppend},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SendAsyncStep[]]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Uri]
     # The URI for the proxy server to use
     ${Proxy},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.PSCredential]
     # Credentials for a proxy server to use for the remote call
     ${ProxyCredential},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Use the default credentials for the proxy
     ${ProxyUseDefaultCredentials}
@@ -146,7 +146,7 @@ begin {
         }
         $parameterSet = $PSCmdlet.ParameterSetName
         $mapping = @{
-            CreateExpanded = 'Az.DataDog.private\New-AzDataDogMarketplaceAgreement_CreateExpanded';
+            CreateExpanded = 'Az.Datadog.private\New-AzDatadogMarketplaceAgreement_CreateExpanded';
         }
         if (('CreateExpanded') -contains $parameterSet -and -not $PSBoundParameters.ContainsKey('SubscriptionId')) {
             $PSBoundParameters['SubscriptionId'] = (Get-AzContext).Subscription.Id

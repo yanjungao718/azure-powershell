@@ -6,7 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json
 {
     internal sealed class XSet<T> : JsonArray, IEnumerable<JsonNode>
     {

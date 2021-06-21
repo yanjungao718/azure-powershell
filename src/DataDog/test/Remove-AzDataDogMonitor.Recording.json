@@ -1,15 +1,15 @@
 {
-  "Remove-AzDataDogMonitor+[NoContext]+Delete+$DELETE+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim?api-version=2021-03-01+1": {
+  "Remove-AzDatadogMonitor+[NoContext]+Delete+$DELETE+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim?api-version=2021-03-01+1": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim?api-version=2021-03-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim?api-version=2021-03-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "1" ],
         "x-ms-client-request-id": [ "cbc575a7-6ac4-471a-b07a-c1d619243f48" ],
-        "CommandName": [ "Remove-AzDataDogMonitor" ],
-        "FullCommandName": [ "Remove-AzDataDogMonitor_Delete" ],
+        "CommandName": [ "Remove-AzDatadogMonitor" ],
+        "FullCommandName": [ "Remove-AzDatadogMonitor_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
@@ -43,7 +43,7 @@
       "isContentBase64": false
     }
   },
-  "Remove-AzDataDogMonitor+[NoContext]+Delete+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d?api-version=2021-03-01+2": {
+  "Remove-AzDatadogMonitor+[NoContext]+Delete+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d?api-version=2021-03-01+2": {
     "Request": {
       "Method": "GET",
       "RequestUri": "https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d?api-version=2021-03-01",
@@ -53,8 +53,8 @@
         "Authorization": [ "[Filtered]" ],
         "x-ms-unique-id": [ "2" ],
         "x-ms-client-request-id": [ "cbc575a7-6ac4-471a-b07a-c1d619243f48" ],
-        "CommandName": [ "Remove-AzDataDogMonitor" ],
-        "FullCommandName": [ "Remove-AzDataDogMonitor_Delete" ],
+        "CommandName": [ "Remove-AzDatadogMonitor" ],
+        "FullCommandName": [ "Remove-AzDatadogMonitor_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
       },
@@ -80,11 +80,11 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"name\":\"b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:05.5989128Z\",\"endTime\":\"2021-05-31T07:24:09.9098567Z\",\"error\":{},\"properties\":null}",
+      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"name\":\"b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:05.5989128Z\",\"endTime\":\"2021-05-31T07:24:09.9098567Z\",\"error\":{},\"properties\":null}",
       "isContentBase64": false
     }
   },
-  "Remove-AzDataDogMonitor+[NoContext]+Delete+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d?api-version=2021-03-01+3": {
+  "Remove-AzDatadogMonitor+[NoContext]+Delete+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d?api-version=2021-03-01+3": {
     "Request": {
       "Method": "GET",
       "RequestUri": "https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d?api-version=2021-03-01",
@@ -94,8 +94,8 @@
         "Authorization": [ "[Filtered]" ],
         "x-ms-unique-id": [ "3" ],
         "x-ms-client-request-id": [ "cbc575a7-6ac4-471a-b07a-c1d619243f48" ],
-        "CommandName": [ "Remove-AzDataDogMonitor" ],
-        "FullCommandName": [ "Remove-AzDataDogMonitor_Delete" ],
+        "CommandName": [ "Remove-AzDatadogMonitor" ],
+        "FullCommandName": [ "Remove-AzDatadogMonitor_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
       },
@@ -121,21 +121,21 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"name\":\"b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:05.5989128Z\",\"endTime\":\"2021-05-31T07:24:09.9098567Z\",\"error\":{},\"properties\":null}",
+      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"name\":\"b0d313df-ab54-4a3d-92a8-2d32db918f0d\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorab3cim\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:05.5989128Z\",\"endTime\":\"2021-05-31T07:24:09.9098567Z\",\"error\":{},\"properties\":null}",
       "isContentBase64": false
     }
   },
-  "Remove-AzDataDogMonitor+[NoContext]+DeleteViaIdentity+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01+1": {
+  "Remove-AzDatadogMonitor+[NoContext]+DeleteViaIdentity+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "4" ],
         "x-ms-client-request-id": [ "e051b82d-6ee9-4cd4-80a7-5f232fa2d023" ],
-        "CommandName": [ "Get-AzDataDogMonitor" ],
-        "FullCommandName": [ "Get-AzDataDogMonitor_Get" ],
+        "CommandName": [ "Get-AzDatadogMonitor" ],
+        "FullCommandName": [ "Get-AzDatadogMonitor_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
@@ -163,21 +163,21 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw\",\"name\":\"monitor5sdwcw\",\"type\":\"microsoft.datadog/monitors\",\"sku\":{\"name\":\"drawdown_testing_20200904_Monthly\"},\"location\":\"eastus2euap\",\"systemData\":{\"createdBy\":\"v-diya@microsoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2021-05-31T07:16:28.8857408Z\",\"lastModifiedBy\":\"ae11f5fb-c627-4eec-b4a0-f7b5969426e5\",\"lastModifiedByType\":\"Application\",\"lastModifiedAt\":\"2021-05-31T07:16:53.3262045Z\"},\"identity\":{\"principalId\":\"38d79e3f-b655-4570-95cd-445187fe40fe\",\"tenantId\":\"72f988bf-86f1-41af-91ab-2d7cd011db47\",\"type\":\"SystemAssigned\"},\"properties\":{\"provisioningState\":\"Succeeded\",\"monitoringStatus\":\"Enabled\",\"marketplaceSubscriptionStatus\":\"Active\",\"datadogOrganizationProperties\":{\"name\":\"monitor5sdwcw\",\"id\":\"24301ca0-c1e0-11eb-9a40-da7ad0900003\"},\"liftrResourceCategory\":\"Unknown\",\"liftrResourcePreference\":0}}",
+      "Content": "{\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw\",\"name\":\"monitor5sdwcw\",\"type\":\"microsoft.Datadog/monitors\",\"sku\":{\"name\":\"drawdown_testing_20200904_Monthly\"},\"location\":\"eastus2euap\",\"systemData\":{\"createdBy\":\"v-diya@microsoft.com\",\"createdByType\":\"User\",\"createdAt\":\"2021-05-31T07:16:28.8857408Z\",\"lastModifiedBy\":\"ae11f5fb-c627-4eec-b4a0-f7b5969426e5\",\"lastModifiedByType\":\"Application\",\"lastModifiedAt\":\"2021-05-31T07:16:53.3262045Z\"},\"identity\":{\"principalId\":\"38d79e3f-b655-4570-95cd-445187fe40fe\",\"tenantId\":\"72f988bf-86f1-41af-91ab-2d7cd011db47\",\"type\":\"SystemAssigned\"},\"properties\":{\"provisioningState\":\"Succeeded\",\"monitoringStatus\":\"Enabled\",\"marketplaceSubscriptionStatus\":\"Active\",\"DatadogOrganizationProperties\":{\"name\":\"monitor5sdwcw\",\"id\":\"24301ca0-c1e0-11eb-9a40-da7ad0900003\"},\"liftrResourceCategory\":\"Unknown\",\"liftrResourcePreference\":0}}",
       "isContentBase64": false
     }
   },
-  "Remove-AzDataDogMonitor+[NoContext]+DeleteViaIdentity+$DELETE+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01+2": {
+  "Remove-AzDatadogMonitor+[NoContext]+DeleteViaIdentity+$DELETE+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01+2": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw?api-version=2021-03-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "5" ],
         "x-ms-client-request-id": [ "4c0202b6-0137-42f1-b933-0ca0557a474c" ],
-        "CommandName": [ "Remove-AzDataDogMonitor" ],
-        "FullCommandName": [ "Remove-AzDataDogMonitor_DeleteViaIdentity" ],
+        "CommandName": [ "Remove-AzDatadogMonitor" ],
+        "FullCommandName": [ "Remove-AzDatadogMonitor_DeleteViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
@@ -211,7 +211,7 @@
       "isContentBase64": false
     }
   },
-  "Remove-AzDataDogMonitor+[NoContext]+DeleteViaIdentity+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796?api-version=2021-03-01+3": {
+  "Remove-AzDatadogMonitor+[NoContext]+DeleteViaIdentity+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796?api-version=2021-03-01+3": {
     "Request": {
       "Method": "GET",
       "RequestUri": "https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796?api-version=2021-03-01",
@@ -221,8 +221,8 @@
         "Authorization": [ "[Filtered]" ],
         "x-ms-unique-id": [ "6" ],
         "x-ms-client-request-id": [ "4c0202b6-0137-42f1-b933-0ca0557a474c" ],
-        "CommandName": [ "Remove-AzDataDogMonitor" ],
-        "FullCommandName": [ "Remove-AzDataDogMonitor_DeleteViaIdentity" ],
+        "CommandName": [ "Remove-AzDatadogMonitor" ],
+        "FullCommandName": [ "Remove-AzDatadogMonitor_DeleteViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
       },
@@ -248,11 +248,11 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796\",\"name\":\"10f332e3-f931-4258-bd89-85cf3bdca796\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:39.2630259Z\",\"endTime\":\"2021-05-31T07:24:43.189109Z\",\"error\":{},\"properties\":null}",
+      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796\",\"name\":\"10f332e3-f931-4258-bd89-85cf3bdca796\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:39.2630259Z\",\"endTime\":\"2021-05-31T07:24:43.189109Z\",\"error\":{},\"properties\":null}",
       "isContentBase64": false
     }
   },
-  "Remove-AzDataDogMonitor+[NoContext]+DeleteViaIdentity+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796?api-version=2021-03-01+4": {
+  "Remove-AzDatadogMonitor+[NoContext]+DeleteViaIdentity+$GET+https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796?api-version=2021-03-01+4": {
     "Request": {
       "Method": "GET",
       "RequestUri": "https://management.azure.com/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796?api-version=2021-03-01",
@@ -262,8 +262,8 @@
         "Authorization": [ "[Filtered]" ],
         "x-ms-unique-id": [ "7" ],
         "x-ms-client-request-id": [ "4c0202b6-0137-42f1-b933-0ca0557a474c" ],
-        "CommandName": [ "Remove-AzDataDogMonitor" ],
-        "FullCommandName": [ "Remove-AzDataDogMonitor_DeleteViaIdentity" ],
+        "CommandName": [ "Remove-AzDatadogMonitor" ],
+        "FullCommandName": [ "Remove-AzDatadogMonitor_DeleteViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
       },
@@ -289,7 +289,7 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796\",\"name\":\"10f332e3-f931-4258-bd89-85cf3bdca796\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:39.2630259Z\",\"endTime\":\"2021-05-31T07:24:43.189109Z\",\"error\":{},\"properties\":null}",
+      "Content": "{\"id\":\"/providers/Microsoft.Datadog/locations/EASTUS2EUAP/operationStatuses/10f332e3-f931-4258-bd89-85cf3bdca796\",\"name\":\"10f332e3-f931-4258-bd89-85cf3bdca796\",\"resourceId\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitor5sdwcw\",\"status\":\"Succeeded\",\"startTime\":\"2021-05-31T07:24:39.2630259Z\",\"endTime\":\"2021-05-31T07:24:43.189109Z\",\"error\":{},\"properties\":null}",
       "isContentBase64": false
     }
   }

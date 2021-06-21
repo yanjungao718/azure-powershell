@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azdatadogtagrule
 schema: 2.0.0
 ---
 
-# New-AzDataDogTagRule
+# New-AzDatadogTagRule
 
 ## SYNOPSIS
 Create or update a tag rule set for a given monitor resource.
@@ -14,7 +14,7 @@ Create or update a tag rule set for a given monitor resource.
 
 ### CreateExpanded (Default)
 ```
-New-AzDataDogTagRule -MonitorName <String> -Name <String> -ResourceGroupName <String>
+New-AzDatadogTagRule -MonitorName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-LogRuleFilteringTag <IFilteringTag[]>] [-LogRuleSendAadLog]
  [-LogRuleSendResourceLog] [-LogRuleSendSubscriptionLog] [-MetricRuleFilteringTag <IFilteringTag[]>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
@@ -22,7 +22,7 @@ New-AzDataDogTagRule -MonitorName <String> -Name <String> -ResourceGroupName <St
 
 ### CreateViaIdentityExpanded
 ```
-New-AzDataDogTagRule -InputObject <IDataDogIdentity> [-LogRuleFilteringTag <IFilteringTag[]>]
+New-AzDatadogTagRule -InputObject <IDatadogIdentity> [-LogRuleFilteringTag <IFilteringTag[]>]
  [-LogRuleSendAadLog] [-LogRuleSendResourceLog] [-LogRuleSendSubscriptionLog]
  [-MetricRuleFilteringTag <IFilteringTag[]>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
@@ -36,13 +36,13 @@ Create or update a tag rule set for a given monitor resource.
 ### Example 1: Create or update a tag rule set for a given monitor resource
 ```powershell
 PS C:\> $ftobjArray = @()
-PS C:\> $ftobjArray += New-AzDataDogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
-PS C:\> $ftobjArray += New-AzDataDogFilteringTagObject -Action "Exclude" -Value "Dev" -Name "Environment"
-PS C:\> New-AzDataDogTagRule -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'test' -LogRuleFilteringTag $ftobjArray
+PS C:\> $ftobjArray += New-AzDatadogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
+PS C:\> $ftobjArray += New-AzDatadogFilteringTagObject -Action "Exclude" -Value "Dev" -Name "Environment"
+PS C:\> New-AzDatadogTagRule -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'test' -LogRuleFilteringTag $ftobjArray
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/tagrules
+default microsoft.Datadog/monitors/tagrules
 ```
 
 This command creates or updates a tag rule set for a given monitor resource.
@@ -50,13 +50,13 @@ This command creates or updates a tag rule set for a given monitor resource.
 ### Example 2: Create or update a tag rule set for a given monitor resource by pipeline
 ```powershell
 PS C:\> $ftobjArray = @()
-PS C:\> $ftobjArray += New-AzDataDogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
-PS C:\> $ftobjArray += New-AzDataDogFilteringTagObject -Action "Exclude" -Value "Dev" -Name "Environment"
-PS C:\> Get-AzDataDogTagRule -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default' | New-AzDataDogTagRule -LogRuleFilteringTag $ftobjArray
+PS C:\> $ftobjArray += New-AzDatadogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
+PS C:\> $ftobjArray += New-AzDatadogFilteringTagObject -Action "Exclude" -Value "Dev" -Name "Environment"
+PS C:\> Get-AzDatadogTagRule -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' | New-AzDatadogTagRule -LogRuleFilteringTag $ftobjArray
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/tagrules
+default microsoft.Datadog/monitors/tagrules
 ```
 
 This command creates or updates a tag rule set for a given monitor resource by pipeline.
@@ -83,7 +83,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: CreateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ If Include actions are specified, the rules will only include resources with the
 To construct, see NOTES section for LOGRULEFILTERINGTAG properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IFilteringTag[]
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag[]
 Parameter Sets: (All)
 Aliases:
 
@@ -167,7 +167,7 @@ If Include actions are specified, the rules will only include resources with the
 To construct, see NOTES section for METRICRULEFILTERINGTAG properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IFilteringTag[]
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IFilteringTag[]
 Parameter Sets: (All)
 Aliases:
 
@@ -275,11 +275,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoringTagRules
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoringTagRules
 
 ## NOTES
 
@@ -290,7 +290,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name

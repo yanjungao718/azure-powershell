@@ -1,6 +1,6 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell;
+    using Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell;
 
     [System.ComponentModel.TypeConverter(typeof(DatadogHostMetadataTypeConverter))]
     public partial class DatadogHostMetadata
@@ -55,7 +55,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         partial void OverrideToString(ref string stringResult, ref bool returnNow);
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostMetadata"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostMetadata"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
@@ -68,18 +68,18 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogInstallMethod) content.GetValueForProperty("InstallMethod",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogInstallMethodTypeConverter.ConvertFrom);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogLogsAgent) content.GetValueForProperty("LogsAgent",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogLogsAgentTypeConverter.ConvertFrom);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion = (string) content.GetValueForProperty("AgentVersion",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool = (string) content.GetValueForProperty("InstallMethodTool",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion = (string) content.GetValueForProperty("InstallMethodToolVersion",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion = (string) content.GetValueForProperty("InstallMethodInstallerVersion",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport = (string) content.GetValueForProperty("LogAgentTransport",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogInstallMethod) content.GetValueForProperty("InstallMethod",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogInstallMethodTypeConverter.ConvertFrom);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogLogsAgent) content.GetValueForProperty("LogsAgent",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogLogsAgentTypeConverter.ConvertFrom);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion = (string) content.GetValueForProperty("AgentVersion",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool = (string) content.GetValueForProperty("InstallMethodTool",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion = (string) content.GetValueForProperty("InstallMethodToolVersion",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion = (string) content.GetValueForProperty("InstallMethodInstallerVersion",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport = (string) content.GetValueForProperty("LogAgentTransport",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport, global::System.Convert.ToString);
             AfterDeserializeDictionary(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostMetadata"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostMetadata"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
@@ -92,38 +92,38 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogInstallMethod) content.GetValueForProperty("InstallMethod",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogInstallMethodTypeConverter.ConvertFrom);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent = (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogLogsAgent) content.GetValueForProperty("LogsAgent",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogLogsAgentTypeConverter.ConvertFrom);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion = (string) content.GetValueForProperty("AgentVersion",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool = (string) content.GetValueForProperty("InstallMethodTool",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion = (string) content.GetValueForProperty("InstallMethodToolVersion",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion = (string) content.GetValueForProperty("InstallMethodInstallerVersion",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport = (string) content.GetValueForProperty("LogAgentTransport",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogInstallMethod) content.GetValueForProperty("InstallMethod",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethod, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogInstallMethodTypeConverter.ConvertFrom);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent = (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogLogsAgent) content.GetValueForProperty("LogsAgent",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogsAgent, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogLogsAgentTypeConverter.ConvertFrom);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion = (string) content.GetValueForProperty("AgentVersion",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).AgentVersion, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool = (string) content.GetValueForProperty("InstallMethodTool",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodTool, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion = (string) content.GetValueForProperty("InstallMethodToolVersion",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodToolVersion, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion = (string) content.GetValueForProperty("InstallMethodInstallerVersion",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).InstallMethodInstallerVersion, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport = (string) content.GetValueForProperty("LogAgentTransport",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadataInternal)this).LogAgentTransport, global::System.Convert.ToString);
             AfterDeserializePSObject(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostMetadata"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostMetadata"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadata" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadata" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadata DeserializeFromDictionary(global::System.Collections.IDictionary content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadata DeserializeFromDictionary(global::System.Collections.IDictionary content)
         {
             return new DatadogHostMetadata(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostMetadata"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostMetadata"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadata" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadata" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadata DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadata DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
         {
             return new DatadogHostMetadata(content);
         }
@@ -133,12 +133,12 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// </summary>
         /// <param name="jsonText">a string containing a JSON serialized instance of this model.</param>
         /// <returns>an instance of the <see cref="className" /> model class.</returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogHostMetadata FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode.Parse(jsonText));
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogHostMetadata FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode.Parse(jsonText));
 
         /// <summary>Serializes this instance to a json string.</summary>
 
         /// <returns>a <see cref="System.String" /> containing this model serialized to JSON text.</returns>
-        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode.IncludeAll)?.ToString();
+        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode.IncludeAll)?.ToString();
 
         public override string ToString()
         {

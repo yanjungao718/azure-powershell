@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmarketplaceagreement
 schema: 2.0.0
 ---
 
-# Get-AzDataDogMarketplaceAgreement
+# Get-AzDatadogMarketplaceAgreement
 
 ## SYNOPSIS
 List Datadog marketplace agreements in the subscription.
@@ -13,7 +13,7 @@ List Datadog marketplace agreements in the subscription.
 ## SYNTAX
 
 ```
-Get-AzDataDogMarketplaceAgreement [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+Get-AzDatadogMarketplaceAgreement [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
@@ -24,12 +24,12 @@ List Datadog marketplace agreements in the subscription.
 
 ### Example 1: List Datadog marketplace agreements in the subscription
 ```powershell
-PS C:\> Get-AzDataDogMarketplaceAgreement
+PS C:\> Get-AzDatadogMarketplaceAgreement
 
 Name        Type
 ----        ----
 marketplace Microsoft.Datadog/agreements
-datadog     Microsoft.Datadog/agreements
+Datadog     Microsoft.Datadog/agreements
 ```
 
 This command lists Datadog marketplace agreements in the subscription.
@@ -73,7 +73,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResource
 
 ## NOTES
 

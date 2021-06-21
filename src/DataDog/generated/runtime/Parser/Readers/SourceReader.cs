@@ -6,7 +6,7 @@
 using System.Globalization;
 using System.IO;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json
 {
     public sealed class SourceReader : IDisposable
     {

@@ -19,34 +19,34 @@ List the resources currently being monitored by the Datadog monitor resource.
 .Description
 List the resources currently being monitored by the Datadog monitor resource.
 .Example
-PS C:\> Get-AzDataDogMonitorMonitoredResource -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Get-AzDatadogMonitorMonitoredResource -ResourceGroupName azure-rg-Datadog -Name Datadog
 
 
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource
+Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource
 .Link
 https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmonitormonitoredresource
 #>
-function Get-AzDataDogMonitorMonitoredResource {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource])]
+function Get-AzDatadogMonitorMonitoredResource {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource])]
 [CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter(Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
     [System.String]
     # Monitor resource name
     ${Name},
 
     [Parameter(Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
     [System.String]
     # The name of the resource group.
     # The name is case insensitive.
     ${ResourceGroupName},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
     [System.String[]]
     # The ID of the target subscription.
     ${SubscriptionId},
@@ -54,46 +54,46 @@ param(
     [Parameter()]
     [Alias('AzureRMContext', 'AzureCredential')]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Azure')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Azure')]
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Wait for .NET debugger to attach
     ${Break},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SendAsyncStep[]]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be appended to the front of the pipeline
     ${HttpPipelineAppend},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SendAsyncStep[]]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Uri]
     # The URI for the proxy server to use
     ${Proxy},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.PSCredential]
     # Credentials for a proxy server to use for the remote call
     ${ProxyCredential},
 
     [Parameter(DontShow)]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Runtime')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Use the default credentials for the proxy
     ${ProxyUseDefaultCredentials}
@@ -107,7 +107,7 @@ begin {
         }
         $parameterSet = $PSCmdlet.ParameterSetName
         $mapping = @{
-            List = 'Az.DataDog.private\Get-AzDataDogMonitorMonitoredResource_List';
+            List = 'Az.Datadog.private\Get-AzDatadogMonitorMonitoredResource_List';
         }
         if (('List') -contains $parameterSet -and -not $PSBoundParameters.ContainsKey('SubscriptionId')) {
             $PSBoundParameters['SubscriptionId'] = (Get-AzContext).Subscription.Id

@@ -1,6 +1,6 @@
 ### Example 1: List the resources currently being monitored by the Datadog monitor resource
 ```powershell
-PS C:\> Get-AzDataDogMonitorMonitoredResource -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Get-AzDatadogMonitorMonitoredResource -ResourceGroupName azure-rg-Datadog -Name Datadog
 
 ```
 

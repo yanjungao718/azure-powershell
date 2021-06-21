@@ -1,15 +1,15 @@
 {
-  "Get-AzDataDogMonitorHost+[NoContext]+List+$POST+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/listHosts?api-version=2021-03-01+1": {
+  "Get-AzDatadogMonitorHost+[NoContext]+List+$POST+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/listHosts?api-version=2021-03-01+1": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/listHosts?api-version=2021-03-01",
+      "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/resourceGroups/Datadogmonitor-rg-9jkqrl/providers/Microsoft.Datadog/monitors/monitorib56wm/listHosts?api-version=2021-03-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "1" ],
         "x-ms-client-request-id": [ "62a4cbc6-9cd4-445f-8b1d-2aded7ef8f3e" ],
-        "CommandName": [ "Get-AzDataDogMonitorHost" ],
-        "FullCommandName": [ "Get-AzDataDogMonitorHost_List" ],
+        "CommandName": [ "Get-AzDatadogMonitorHost" ],
+        "FullCommandName": [ "Get-AzDatadogMonitorHost_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <PsModuleName>DataDog</PsModuleName>
+    <PsModuleName>Datadog</PsModuleName>
   </PropertyGroup>
 
   <Import Project="$(MSBuildThisFileDirectory)..\Az.autorest.props" />

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell
 {
     internal static class TypeConverterExtensions
     {

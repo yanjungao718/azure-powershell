@@ -1,11 +1,11 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Extensions;
+    using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Extensions;
 
     /// <summary>Dictionary of <string></summary>
     public partial class DatadogMonitorResourceTags :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogMonitorResourceTags,
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogMonitorResourceTagsInternal
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogMonitorResourceTags,
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogMonitorResourceTagsInternal
     {
 
         /// <summary>Creates an new <see cref="DatadogMonitorResourceTags" /> instance.</summary>
@@ -16,8 +16,8 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
     }
     /// Dictionary of <string>
     public partial interface IDatadogMonitorResourceTags :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IJsonSerializable,
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IAssociativeArray<string>
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IJsonSerializable,
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IAssociativeArray<string>
     {
 
     }

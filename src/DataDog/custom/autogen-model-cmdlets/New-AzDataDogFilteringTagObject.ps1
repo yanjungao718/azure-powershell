@@ -20,17 +20,17 @@
     Create a in-memory object for FilteringTag
 
     .Outputs
-    Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTag
+    Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag
     .Link
-    https://docs.microsoft.com/powershell/module/az.DataDog/new-AzDataDogFilteringTagObject
+    https://docs.microsoft.com/powershell/module/az.Datadog/new-AzDatadogFilteringTagObject
     #>
-    function New-AzDataDogFilteringTagObject {
-        [OutputType('Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTag')]
+    function New-AzDatadogFilteringTagObject {
+        [OutputType('Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag')]
         [CmdletBinding(PositionalBinding=$false)]
         Param(
     
             [Parameter(HelpMessage="Valid actions for a filtering tag. Exclusion takes priority over inclusion.")]
-            [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.TagAction]
+            [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.TagAction]
             $Action,
             [Parameter(HelpMessage="The name (also known as the key) of the tag.")]
             [string]
@@ -41,7 +41,7 @@
         )
 
         process {
-            $Object = [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTag]::New()
+            $Object = [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag]::New()
     
             $Object.Action = $Action
             $Object.Name = $Name

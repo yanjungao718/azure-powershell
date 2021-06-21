@@ -3,7 +3,7 @@ if (-Not (Test-Path -Path $loadEnvPath)) {
     $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
 }
 . ($loadEnvPath)
-$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzDataDogMonitorMonitoredResource.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzDatadogMonitorMonitoredResource.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -11,8 +11,8 @@ while(-not $mockingPath) {
 }
 . ($mockingPath | Select-Object -First 1).FullName
 
-Describe 'Get-AzDataDogMonitorMonitoredResource' {
+Describe 'Get-AzDatadogMonitorMonitoredResource' {
     It 'List' {
-        { Get-AzDataDogMonitorMonitoredResource -ResourceGroupName $env.resourceGroup -Name $env.monitorName01 } | Should -Not -Throw
+        { Get-AzDatadogMonitorMonitoredResource -ResourceGroupName $env.resourceGroup -Name $env.monitorName01 } | Should -Not -Throw
     }
 }

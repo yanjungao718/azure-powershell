@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmonitorapikey
 schema: 2.0.0
 ---
 
-# Get-AzDataDogMonitorApiKey
+# Get-AzDatadogMonitorApiKey
 
 ## SYNOPSIS
 List the api keys for a given monitor resource.
@@ -13,7 +13,7 @@ List the api keys for a given monitor resource.
 ## SYNTAX
 
 ```
-Get-AzDataDogMonitorApiKey -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzDatadogMonitorApiKey -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ List the api keys for a given monitor resource.
 
 ### Example 1: List the api keys for a given monitor resource
 ```powershell
-PS C:\> Get-AzDataDogMonitorApiKey -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Get-AzDatadogMonitorApiKey -ResourceGroupName azure-rg-Datadog -Name Datadog
 
 Created             CreatedBy           Key                              Name
 -------             ---------           ---                              ----
@@ -134,7 +134,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogApiKey
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogApiKey
 
 ## NOTES
 

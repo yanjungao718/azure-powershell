@@ -88,7 +88,7 @@ if(-not $Debugger) {
   $null = Remove-Item -Recurse -ErrorAction SilentlyContinue -Path (Join-Path $binFolder 'Debug'), (Join-Path $binFolder 'Release')
 }
 
-$dll = Join-Path $PSScriptRoot 'bin\Az.DataDog.private.dll'
+$dll = Join-Path $PSScriptRoot 'bin\Az.Datadog.private.dll'
 if(-not (Test-Path $dll)) {
   Write-Error "Unable to find output assembly in '$binFolder'."
 }
@@ -97,7 +97,7 @@ if(-not (Test-Path $dll)) {
 $null = Import-Module -Name $dll
 
 $modulePaths = $dll
-$customPsm1 = Join-Path $PSScriptRoot 'custom\Az.DataDog.custom.psm1'
+$customPsm1 = Join-Path $PSScriptRoot 'custom\Az.Datadog.custom.psm1'
 if(Test-Path $customPsm1) {
   $modulePaths = @($dll, $customPsm1)
 }
@@ -114,9 +114,9 @@ if(Test-Path $internalFolder) {
 }
 $null = New-Item -ItemType Directory -Force -Path $internalFolder
 
-$psd1 = Join-Path $PSScriptRoot './Az.DataDog.psd1'
+$psd1 = Join-Path $PSScriptRoot './Az.Datadog.psd1'
 $guid = Get-ModuleGuid -Psd1Path $psd1
-$moduleName = 'Az.DataDog'
+$moduleName = 'Az.Datadog'
 $examplesFolder = Join-Path $PSScriptRoot 'examples'
 $null = New-Item -ItemType Directory -Force -Path $examplesFolder
 
@@ -132,7 +132,7 @@ if($NoDocs) {
   Export-ProxyCmdlet -ModuleName $moduleName -ModulePath $modulePaths -ExportsFolder $exportsFolder -InternalFolder $internalFolder -ExcludeDocs -ExamplesFolder $examplesFolder
 } else {
   Write-Host -ForegroundColor Green 'Creating exports and docs...'
-  $moduleDescription = 'Microsoft Azure PowerShell: DataDog cmdlets'
+  $moduleDescription = 'Microsoft Azure PowerShell: Datadog cmdlets'
   $docsFolder = Join-Path $PSScriptRoot 'docs'
   if(Test-Path $docsFolder) {
     $null = Get-ChildItem -Path $docsFolder -Recurse -Exclude 'readme.md' | Remove-Item -Recurse -ErrorAction SilentlyContinue
@@ -142,7 +142,7 @@ if($NoDocs) {
 }
 
 Write-Host -ForegroundColor Green 'Creating format.ps1xml...'
-$formatPs1xml = Join-Path $PSScriptRoot './Az.DataDog.format.ps1xml'
+$formatPs1xml = Join-Path $PSScriptRoot './Az.Datadog.format.ps1xml'
 Export-FormatPs1xml -FilePath $formatPs1xml
 
 Write-Host -ForegroundColor Green 'Creating psd1...'

@@ -1,31 +1,31 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20
 {
-    using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Extensions;
+    using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Extensions;
 
     /// <summary>The resource management error additional info.</summary>
     public partial class ErrorAdditionalInfo :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.IErrorAdditionalInfo,
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.IErrorAdditionalInfoInternal
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.IErrorAdditionalInfo,
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.IErrorAdditionalInfoInternal
     {
 
         /// <summary>Backing field for <see cref="Info" /> property.</summary>
-        private Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IAny _info;
+        private Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IAny _info;
 
         /// <summary>The additional info.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
-        public Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IAny Info { get => (this._info = this._info ?? new Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Any()); }
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
+        public Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IAny Info { get => (this._info = this._info ?? new Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Any()); }
 
         /// <summary>Internal Acessors for Info</summary>
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IAny Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.IErrorAdditionalInfoInternal.Info { get => (this._info = this._info ?? new Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Any()); set { {_info = value;} } }
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IAny Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.IErrorAdditionalInfoInternal.Info { get => (this._info = this._info ?? new Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Any()); set { {_info = value;} } }
 
         /// <summary>Internal Acessors for Type</summary>
-        string Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.IErrorAdditionalInfoInternal.Type { get => this._type; set { {_type = value;} } }
+        string Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.IErrorAdditionalInfoInternal.Type { get => this._type; set { {_type = value;} } }
 
         /// <summary>Backing field for <see cref="Type" /> property.</summary>
         private string _type;
 
         /// <summary>The additional info type.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string Type { get => this._type; }
 
         /// <summary>Creates an new <see cref="ErrorAdditionalInfo" /> instance.</summary>
@@ -36,18 +36,18 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20
     }
     /// The resource management error additional info.
     public partial interface IErrorAdditionalInfo :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IJsonSerializable
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IJsonSerializable
     {
         /// <summary>The additional info.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = true,
         Description = @"The additional info.",
         SerializedName = @"info",
-        PossibleTypes = new [] { typeof(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IAny) })]
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IAny Info { get;  }
+        PossibleTypes = new [] { typeof(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IAny) })]
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IAny Info { get;  }
         /// <summary>The additional info type.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = true,
         Description = @"The additional info type.",
@@ -61,7 +61,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20
 
     {
         /// <summary>The additional info.</summary>
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IAny Info { get; set; }
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IAny Info { get; set; }
         /// <summary>The additional info type.</summary>
         string Type { get; set; }
 

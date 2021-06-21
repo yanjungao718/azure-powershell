@@ -2,9 +2,9 @@
 <Configuration>
   <ViewDefinitions>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.DataDogIdentity</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.DatadogIdentity</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.DataDogIdentity</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.DatadogIdentity</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -48,9 +48,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.ErrorAdditionalInfo</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.ErrorAdditionalInfo</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.ErrorAdditionalInfo</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.ErrorAdditionalInfo</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -70,9 +70,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.ErrorDetail</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.ErrorDetail</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.ErrorDetail</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.ErrorDetail</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -104,9 +104,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.SystemData</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.SystemData</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20.SystemData</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20.SystemData</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -156,9 +156,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementProperties</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementProperties</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementProperties</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementProperties</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -220,9 +220,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementResource</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementResource</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementResource</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementResource</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -248,9 +248,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementResourceListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementResourceListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementResourceListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementResourceListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -270,9 +270,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogApiKey</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogApiKey</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogApiKey</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogApiKey</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -310,9 +310,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogApiKeyListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogApiKeyListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogApiKeyListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogApiKeyListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -332,9 +332,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHost</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHost</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHost</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHost</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -366,9 +366,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -388,9 +388,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostMetadata</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostMetadata</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogHostMetadata</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogHostMetadata</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -410,9 +410,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogInstallMethod</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogInstallMethod</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogInstallMethod</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogInstallMethod</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -444,9 +444,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogLogsAgent</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogLogsAgent</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogLogsAgent</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogLogsAgent</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -466,9 +466,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResource</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResource</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResource</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResource</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -500,9 +500,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResourceListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResourceListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResourceListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResourceListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -522,9 +522,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResourceTags</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResourceTags</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResourceTags</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResourceTags</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -544,9 +544,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResourceUpdateParametersTags</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResourceUpdateParametersTags</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogMonitorResourceUpdateParametersTags</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogMonitorResourceUpdateParametersTags</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -566,9 +566,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogOrganizationProperties</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogOrganizationProperties</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogOrganizationProperties</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogOrganizationProperties</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -624,9 +624,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSetPasswordLink</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSetPasswordLink</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSetPasswordLink</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSetPasswordLink</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -646,9 +646,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnProperties</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnProperties</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnProperties</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnProperties</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -686,9 +686,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResource</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResource</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResource</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResource</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -714,9 +714,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogSingleSignOnResourceListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogSingleSignOnResourceListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -736,9 +736,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTag</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTag</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -770,9 +770,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IdentityProperties</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IdentityProperties</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IdentityProperties</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IdentityProperties</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -804,9 +804,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LinkedResourceListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LinkedResourceListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LinkedResourceListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LinkedResourceListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -826,9 +826,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LogRules</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LogRules</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.LogRules</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.LogRules</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -860,9 +860,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResource</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResource</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResource</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResource</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -900,9 +900,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResourceListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResourceListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResourceListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResourceListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -922,9 +922,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoringTagRules</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoringTagRules</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoringTagRules</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoringTagRules</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -950,9 +950,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoringTagRulesListResponse</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoringTagRulesListResponse</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoringTagRulesListResponse</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoringTagRulesListResponse</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -972,9 +972,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoringTagRulesProperties</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoringTagRulesProperties</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoringTagRulesProperties</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoringTagRulesProperties</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -994,9 +994,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitorProperties</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitorProperties</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitorProperties</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitorProperties</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1040,9 +1040,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitorUpdateProperties</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitorUpdateProperties</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitorUpdateProperties</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitorUpdateProperties</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1062,9 +1062,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.OperationDisplay</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.OperationDisplay</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.OperationDisplay</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.OperationDisplay</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1102,9 +1102,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.OperationListResult</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.OperationListResult</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.OperationListResult</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.OperationListResult</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1124,9 +1124,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.OperationResult</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.OperationResult</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.OperationResult</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.OperationResult</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1152,9 +1152,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ResourceSku</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ResourceSku</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.ResourceSku</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.ResourceSku</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -1174,9 +1174,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.UserInfo</Name>
+      <Name>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.UserInfo</Name>
       <ViewSelectedBy>
-        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.UserInfo</TypeName>
+        <TypeName>Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.UserInfo</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>

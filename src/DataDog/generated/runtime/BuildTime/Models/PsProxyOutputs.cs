@@ -8,10 +8,10 @@ using System.Linq;
 using System.Management.Automation;
 using System.Text;
 using System.Text.RegularExpressions;
-using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell.PsProxyOutputExtensions;
-using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell.PsProxyTypeExtensions;
+using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell.PsProxyOutputExtensions;
+using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell.PsProxyTypeExtensions;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell
 {
     internal class OutputTypeOutput
     {

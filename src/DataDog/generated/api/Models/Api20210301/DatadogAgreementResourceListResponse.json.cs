@@ -1,6 +1,6 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Extensions;
+    using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Extensions;
 
     /// <summary>Response of a list operation.</summary>
     public partial class DatadogAgreementResourceListResponse
@@ -12,15 +12,15 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// </summary>
         /// <param name="json">The JsonNode that should be deserialized into this object.</param>
 
-        partial void AfterFromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject json);
+        partial void AfterFromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject json);
 
         /// <summary>
-        /// <c>AfterToJson</c> will be called after the json erialization has finished, allowing customization of the <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject"
+        /// <c>AfterToJson</c> will be called after the json erialization has finished, allowing customization of the <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject"
         /// /> before it is returned. Implement this method in a partial class to enable this behavior
         /// </summary>
         /// <param name="container">The JSON container that the serialization result will be placed in.</param>
 
-        partial void AfterToJson(ref Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject container);
+        partial void AfterToJson(ref Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject container);
 
         /// <summary>
         /// <c>BeforeFromJson</c> will be called before the json deserialization has commenced, allowing complete customization of
@@ -32,7 +32,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// <param name="returnNow">Determines if the rest of the deserialization should be processed, or if the method should return
         /// instantly.</param>
 
-        partial void BeforeFromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject json, ref bool returnNow);
+        partial void BeforeFromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject json, ref bool returnNow);
 
         /// <summary>
         /// <c>BeforeToJson</c> will be called before the json serialization has commenced, allowing complete customization of the
@@ -44,13 +44,13 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// <param name="returnNow">Determines if the rest of the serialization should be processed, or if the method should return
         /// instantly.</param>
 
-        partial void BeforeToJson(ref Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject container, ref bool returnNow);
+        partial void BeforeToJson(ref Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject container, ref bool returnNow);
 
         /// <summary>
-        /// Deserializes a Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject into a new instance of <see cref="DatadogAgreementResourceListResponse" />.
+        /// Deserializes a Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject into a new instance of <see cref="DatadogAgreementResourceListResponse" />.
         /// </summary>
-        /// <param name="json">A Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject instance to deserialize from.</param>
-        internal DatadogAgreementResourceListResponse(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject json)
+        /// <param name="json">A Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject instance to deserialize from.</param>
+        internal DatadogAgreementResourceListResponse(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject json)
         {
             bool returnNow = false;
             BeforeFromJson(json, ref returnNow);
@@ -58,36 +58,36 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
             {
                 return;
             }
-            {_value = If( json?.PropertyT<Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonArray>("value"), out var __jsonValue) ? If( __jsonValue as Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonArray, out var __v) ? new global::System.Func<Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResource[]>(()=> global::System.Linq.Enumerable.ToArray(global::System.Linq.Enumerable.Select(__v, (__u)=>(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResource) (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.DatadogAgreementResource.FromJson(__u) )) ))() : null : Value;}
-            {_nextLink = If( json?.PropertyT<Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonString>("nextLink"), out var __jsonNextLink) ? (string)__jsonNextLink : (string)NextLink;}
+            {_value = If( json?.PropertyT<Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonArray>("value"), out var __jsonValue) ? If( __jsonValue as Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonArray, out var __v) ? new global::System.Func<Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResource[]>(()=> global::System.Linq.Enumerable.ToArray(global::System.Linq.Enumerable.Select(__v, (__u)=>(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResource) (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.DatadogAgreementResource.FromJson(__u) )) ))() : null : Value;}
+            {_nextLink = If( json?.PropertyT<Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonString>("nextLink"), out var __jsonNextLink) ? (string)__jsonNextLink : (string)NextLink;}
             AfterFromJson(json);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode"/> into an instance of Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResourceListResponse.
+        /// Deserializes a <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode"/> into an instance of Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResourceListResponse.
         /// </summary>
-        /// <param name="node">a <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode" /> to deserialize from.</param>
+        /// <param name="node">a <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode" /> to deserialize from.</param>
         /// <returns>
-        /// an instance of Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResourceListResponse.
+        /// an instance of Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResourceListResponse.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResourceListResponse FromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode node)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResourceListResponse FromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode node)
         {
-            return node is Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject json ? new DatadogAgreementResourceListResponse(json) : null;
+            return node is Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject json ? new DatadogAgreementResourceListResponse(json) : null;
         }
 
         /// <summary>
-        /// Serializes this instance of <see cref="DatadogAgreementResourceListResponse" /> into a <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode"
+        /// Serializes this instance of <see cref="DatadogAgreementResourceListResponse" /> into a <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode"
         /// />.
         /// </summary>
-        /// <param name="container">The <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject"/> container to serialize this object into. If the caller
+        /// <param name="container">The <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject"/> container to serialize this object into. If the caller
         /// passes in <c>null</c>, a new instance will be created and returned to the caller.</param>
-        /// <param name="serializationMode">Allows the caller to choose the depth of the serialization. See <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode"/>.</param>
+        /// <param name="serializationMode">Allows the caller to choose the depth of the serialization. See <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode"/>.</param>
         /// <returns>
-        /// a serialized instance of <see cref="DatadogAgreementResourceListResponse" /> as a <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode" />.
+        /// a serialized instance of <see cref="DatadogAgreementResourceListResponse" /> as a <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode" />.
         /// </returns>
-        public Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode ToJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject container, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode serializationMode)
+        public Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode ToJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject container, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode serializationMode)
         {
-            container = container ?? new Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonObject();
+            container = container ?? new Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonObject();
 
             bool returnNow = false;
             BeforeToJson(ref container, ref returnNow);
@@ -97,14 +97,14 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
             }
             if (null != this._value)
             {
-                var __w = new Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.XNodeArray();
+                var __w = new Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.XNodeArray();
                 foreach( var __x in this._value )
                 {
                     AddIf(__x?.ToJson(null, serializationMode) ,__w.Add);
                 }
                 container.Add("value",__w);
             }
-            AddIf( null != (((object)this._nextLink)?.ToString()) ? (Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode) new Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonString(this._nextLink.ToString()) : null, "nextLink" ,container.Add );
+            AddIf( null != (((object)this._nextLink)?.ToString()) ? (Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode) new Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonString(this._nextLink.ToString()) : null, "nextLink" ,container.Add );
             AfterToJson(ref container);
             return container;
         }

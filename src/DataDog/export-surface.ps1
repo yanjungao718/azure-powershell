@@ -21,13 +21,13 @@ if(-not $Isolated) {
   return
 }
 
-$dll = Join-Path $PSScriptRoot 'bin\Az.DataDog.private.dll'
+$dll = Join-Path $PSScriptRoot 'bin\Az.Datadog.private.dll'
 if(-not (Test-Path $dll)) {
   Write-Error "Unable to find output assembly in '$binFolder'."
 }
 $null = Import-Module -Name $dll
 
-$moduleName = 'Az.DataDog'
+$moduleName = 'Az.Datadog'
 $exportsFolder = Join-Path $PSScriptRoot 'exports'
 $resourcesFolder = Join-Path $PSScriptRoot 'resources'
 

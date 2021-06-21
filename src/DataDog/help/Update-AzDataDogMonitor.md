@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/update-azdatadogmonitor
 schema: 2.0.0
 ---
 
-# Update-AzDataDogMonitor
+# Update-AzDatadogMonitor
 
 ## SYNOPSIS
 Update a monitor resource.
@@ -14,14 +14,14 @@ Update a monitor resource.
 
 ### UpdateExpanded (Default)
 ```
-Update-AzDataDogMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+Update-AzDatadogMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-MonitoringStatus <MonitoringStatus>] [-SkuName <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>]
  [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-AzDataDogMonitor -InputObject <IDataDogIdentity> [-MonitoringStatus <MonitoringStatus>]
+Update-AzDatadogMonitor -InputObject <IDatadogIdentity> [-MonitoringStatus <MonitoringStatus>]
  [-SkuName <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
@@ -33,21 +33,21 @@ Update a monitor resource.
 
 ### Example 1: Update a monitor resource
 ```powershell
-PS C:\> Update-AzDataDogMonitor -ResourceGroupName azure-rg-datadog -Name datadog -Tag @{'key1'='value1'; 'key2'='value2'}
+PS C:\> Update-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog -Tag @{'key1'='value1'; 'key2'='value2'}
 
 Location    Name         Type
 --------    ----         ----
-eastus2euap datadog microsoft.datadog/monitors
+eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
 This command updates a monitor resource.
 
 ### Example 2: Update a monitor resource by pipeline
 ```powershell
-PS C:\> Get-AzDataDogMonitor -ResourceGroupName azure-rg-datadog -Name datadog | Update-AzDataDogMonitor -Tag @{'key1'='value1'; 'key2'='value2'}
+PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-Datadog -Name Datadog | Update-AzDatadogMonitor -Tag @{'key1'='value1'; 'key2'='value2'}
 Location    Name         Type
 --------    ----         ----
-eastus2euap datadog microsoft.datadog/monitors
+eastus2euap Datadog microsoft.Datadog/monitors
 ```
 
 This command updates a monitor resource by pipeline.
@@ -89,7 +89,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Flag specifying if the resource monitoring is enabled or disabled.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.MonitoringStatus
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.MonitoringStatus
 Parameter Sets: (All)
 Aliases:
 
@@ -242,11 +242,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogMonitorResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogMonitorResource
 
 ## NOTES
 
@@ -257,7 +257,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name

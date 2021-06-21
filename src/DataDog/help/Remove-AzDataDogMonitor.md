@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/remove-azdatadogmonitor
 schema: 2.0.0
 ---
 
-# Remove-AzDataDogMonitor
+# Remove-AzDatadogMonitor
 
 ## SYNOPSIS
 Delete a monitor resource.
@@ -14,13 +14,13 @@ Delete a monitor resource.
 
 ### Delete (Default)
 ```
-Remove-AzDataDogMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
+Remove-AzDatadogMonitor -Name <String> -ResourceGroupName <String> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-AzDataDogMonitor -InputObject <IDataDogIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+Remove-AzDatadogMonitor -InputObject <IDatadogIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Delete a monitor resource.
 
 ### Example 1: Delete a monitor resource
 ```powershell
-PS C:\> Remove-AzDataDogMonitor -ResourceGroupName azure-rg-test -Name datadog-portal03
+PS C:\> Remove-AzDatadogMonitor -ResourceGroupName azure-rg-test -Name Datadog-portal03
 
 ```
 
@@ -39,7 +39,7 @@ This command deletes a monitor resource.
 
 ### Example 2: Delete a monitor resource by pipeline
 ```powershell
-PS C:\> Get-AzDataDogMonitor -ResourceGroupName azure-rg-test -Name datadog-portal02 | Remove-AzDataDogMonitor
+PS C:\> Get-AzDatadogMonitor -ResourceGroupName azure-rg-test -Name Datadog-portal02 | Remove-AzDatadogMonitor
 
 ```
 
@@ -82,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -205,7 +205,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
@@ -220,7 +220,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name

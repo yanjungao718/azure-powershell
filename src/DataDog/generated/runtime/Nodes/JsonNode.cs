@@ -6,7 +6,7 @@
 using System.IO;
 using System.Text;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json
 {
     
 

@@ -5,7 +5,7 @@
 
 using System;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime
 {
     public interface IHeaderSerializable
     {

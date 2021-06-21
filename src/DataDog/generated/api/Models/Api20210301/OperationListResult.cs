@@ -1,26 +1,26 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Extensions;
+    using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Extensions;
 
     /// <summary>Result of GET request to list the Microsoft.Datadog operations.</summary>
     public partial class OperationListResult :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IOperationListResult,
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IOperationListResultInternal
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IOperationListResult,
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IOperationListResultInternal
     {
 
         /// <summary>Backing field for <see cref="NextLink" /> property.</summary>
         private string _nextLink;
 
         /// <summary>URL to get the next set of operation list results if there are any.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string NextLink { get => this._nextLink; set => this._nextLink = value; }
 
         /// <summary>Backing field for <see cref="Value" /> property.</summary>
-        private Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IOperationResult[] _value;
+        private Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IOperationResult[] _value;
 
         /// <summary>List of operations supported by the Microsoft.Datadog provider.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
-        public Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IOperationResult[] Value { get => this._value; set => this._value = value; }
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
+        public Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IOperationResult[] Value { get => this._value; set => this._value = value; }
 
         /// <summary>Creates an new <see cref="OperationListResult" /> instance.</summary>
         public OperationListResult()
@@ -30,10 +30,10 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
     }
     /// Result of GET request to list the Microsoft.Datadog operations.
     public partial interface IOperationListResult :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IJsonSerializable
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IJsonSerializable
     {
         /// <summary>URL to get the next set of operation list results if there are any.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"URL to get the next set of operation list results if there are any.",
@@ -41,13 +41,13 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         PossibleTypes = new [] { typeof(string) })]
         string NextLink { get; set; }
         /// <summary>List of operations supported by the Microsoft.Datadog provider.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"List of operations supported by the Microsoft.Datadog provider.",
         SerializedName = @"value",
-        PossibleTypes = new [] { typeof(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IOperationResult) })]
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IOperationResult[] Value { get; set; }
+        PossibleTypes = new [] { typeof(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IOperationResult) })]
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IOperationResult[] Value { get; set; }
 
     }
     /// Result of GET request to list the Microsoft.Datadog operations.
@@ -57,7 +57,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// <summary>URL to get the next set of operation list results if there are any.</summary>
         string NextLink { get; set; }
         /// <summary>List of operations supported by the Microsoft.Datadog provider.</summary>
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IOperationResult[] Value { get; set; }
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IOperationResult[] Value { get; set; }
 
     }
 }

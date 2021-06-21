@@ -33,7 +33,7 @@ if(Test-Path -Path $localModulesPath) {
   $env:PSModulePath = "$localModulesPath$([IO.Path]::PathSeparator)$env:PSModulePath"
 }
 
-$modulePsd1 = Get-Item -Path (Join-Path $PSScriptRoot './Az.DataDog.psd1')
+$modulePsd1 = Get-Item -Path (Join-Path $PSScriptRoot './Az.Datadog.psd1')
 $modulePath = $modulePsd1.FullName
 $moduleName = $modulePsd1.BaseName
 

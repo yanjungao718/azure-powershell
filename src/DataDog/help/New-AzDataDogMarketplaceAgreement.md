@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azdatadogmarketplaceagreement
 schema: 2.0.0
 ---
 
-# New-AzDataDogMarketplaceAgreement
+# New-AzDatadogMarketplaceAgreement
 
 ## SYNOPSIS
 Create Datadog marketplace agreement in the subscription.
@@ -13,7 +13,7 @@ Create Datadog marketplace agreement in the subscription.
 ## SYNTAX
 
 ```
-New-AzDataDogMarketplaceAgreement [-SubscriptionId <String>] [-Accepted] [-LicenseTextLink <String>]
+New-AzDatadogMarketplaceAgreement [-SubscriptionId <String>] [-Accepted] [-LicenseTextLink <String>]
  [-Plan <String>] [-PrivacyPolicyLink <String>] [-Product <String>] [-Publisher <String>]
  [-RetrieveDatetime <DateTime>] [-Signature <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
@@ -26,11 +26,11 @@ Create Datadog marketplace agreement in the subscription.
 
 ### Example 1: Create Datadog marketplace agreement in the subscription
 ```powershell
-PS C:\> New-AzDataDogMarketplaceAgreement -Accepted
+PS C:\> New-AzDatadogMarketplaceAgreement -Accepted
 
 Name    Type
 ----    ----
-default microsoft.datadog/agreements
+default microsoft.Datadog/agreements
 ```
 
 This command creates Datadog marketplace agreement in the subscription.
@@ -226,7 +226,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementResource
 
 ## NOTES
 

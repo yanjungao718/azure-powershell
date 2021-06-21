@@ -1,5 +1,5 @@
 {
-  "Get-AzDataDogMarketplaceAgreement+[NoContext]+List+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Datadog/agreements?api-version=2021-03-01+1": {
+  "Get-AzDatadogMarketplaceAgreement+[NoContext]+List+$GET+https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Datadog/agreements?api-version=2021-03-01+1": {
     "Request": {
       "Method": "GET",
       "RequestUri": "https://management.azure.com/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Datadog/agreements?api-version=2021-03-01",
@@ -8,8 +8,8 @@
       "Headers": {
         "x-ms-unique-id": [ "1" ],
         "x-ms-client-request-id": [ "f303a6c2-38d7-41d5-87eb-a8555811f4f5" ],
-        "CommandName": [ "Get-AzDataDogMarketplaceAgreement" ],
-        "FullCommandName": [ "Get-AzDataDogMarketplaceAgreement_List" ],
+        "CommandName": [ "Get-AzDatadogMarketplaceAgreement" ],
+        "FullCommandName": [ "Get-AzDatadogMarketplaceAgreement_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
         "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
@@ -36,7 +36,7 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Datadog/agreements/marketplace\",\"name\":\"marketplace\",\"type\":\"Microsoft.Datadog/agreements\",\"properties\":{\"publisher\":\"Microsoft\",\"product\":\"Marketplace\",\"plan\":\"Marketplace\",\"licenseTextLink\":\"https://azure.microsoft.com/en-us/support/legal/marketplace-terms/\",\"privacyPolicyLink\":\"http://www.microsoft.com/privacy\",\"retrieveDatetime\":null,\"signature\":\"\",\"accepted\":true}},{\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Datadog/agreements/datadog\",\"name\":\"datadog\",\"type\":\"Microsoft.Datadog/agreements\",\"properties\":{\"publisher\":\"Datadog\",\"product\":\"Datadog\",\"plan\":\"Datadog\",\"licenseTextLink\":\"https://www.datadoghq.com/pdf/Datadog_AzureMarketplace.pdf\",\"privacyPolicyLink\":\"https://www.datadoghq.com/legal/privacy/\",\"retrieveDatetime\":null,\"signature\":\"\",\"accepted\":true}}]}",
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Datadog/agreements/marketplace\",\"name\":\"marketplace\",\"type\":\"Microsoft.Datadog/agreements\",\"properties\":{\"publisher\":\"Microsoft\",\"product\":\"Marketplace\",\"plan\":\"Marketplace\",\"licenseTextLink\":\"https://azure.microsoft.com/en-us/support/legal/marketplace-terms/\",\"privacyPolicyLink\":\"http://www.microsoft.com/privacy\",\"retrieveDatetime\":null,\"signature\":\"\",\"accepted\":true}},{\"id\":\"/subscriptions/9e223dbe-3399-4e19-88eb-0975f02ac87f/providers/Microsoft.Datadog/agreements/Datadog\",\"name\":\"Datadog\",\"type\":\"Microsoft.Datadog/agreements\",\"properties\":{\"publisher\":\"Datadog\",\"product\":\"Datadog\",\"plan\":\"Datadog\",\"licenseTextLink\":\"https://www.Datadoghq.com/pdf/Datadog_AzureMarketplace.pdf\",\"privacyPolicyLink\":\"https://www.Datadoghq.com/legal/privacy/\",\"retrieveDatetime\":null,\"signature\":\"\",\"accepted\":true}}]}",
       "isContentBase64": false
     }
   }

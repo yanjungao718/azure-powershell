@@ -19,33 +19,33 @@ Create a in-memory object for FilteringTag
 .Description
 Create a in-memory object for FilteringTag
 .Example
-PS C:\> New-AzDataDogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
+PS C:\> New-AzDatadogFilteringTagObject -Action "Include" -Value "Prod" -Name "Environment"
 
 
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTag
+Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag
 .Link
-https://docs.microsoft.com/powershell/module/az.DataDog/new-AzDataDogFilteringTagObject
+https://docs.microsoft.com/powershell/module/az.Datadog/new-AzDatadogFilteringTagObject
 #>
-function New-AzDataDogFilteringTagObject {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.FilteringTag])]
+function New-AzDatadogFilteringTagObject {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.FilteringTag])]
 [CmdletBinding(PositionalBinding=$false)]
 param(
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.TagAction]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.TagAction]
     # Valid actions for a filtering tag.
     # Exclusion takes priority over inclusion.
     ${Action},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # The name (also known as the key) of the tag.
     ${Name},
 
     [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Category('Body')]
     [System.String]
     # The value of the tag.
     ${Value}
@@ -59,7 +59,7 @@ begin {
         }
         $parameterSet = $PSCmdlet.ParameterSetName
         $mapping = @{
-            __AllParameterSets = 'Az.DataDog.custom\New-AzDataDogFilteringTagObject';
+            __AllParameterSets = 'Az.Datadog.custom\New-AzDatadogFilteringTagObject';
         }
         $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand(($mapping[$parameterSet]), [System.Management.Automation.CommandTypes]::Cmdlet)
         $scriptCmd = {& $wrappedCmd @PSBoundParameters}

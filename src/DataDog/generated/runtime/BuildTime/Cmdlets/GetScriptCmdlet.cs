@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 using System.Linq;
 using System.Management.Automation;
-using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell.PsHelpers;
+using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell.PsHelpers;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell
 {
   [Cmdlet(VerbsCommon.Get, "ScriptCmdlet")]
   [OutputType(typeof(string[]))]

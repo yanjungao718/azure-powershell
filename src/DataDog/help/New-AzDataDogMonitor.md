@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azdatadogmonitor
 schema: 2.0.0
 ---
 
-# New-AzDataDogMonitor
+# New-AzDatadogMonitor
 
 ## SYNOPSIS
 Create a monitor resource.
@@ -13,7 +13,7 @@ Create a monitor resource.
 ## SYNTAX
 
 ```
-New-AzDataDogMonitor -Name <String> -ResourceGroupName <String> -Location <String> [-SubscriptionId <String>]
+New-AzDatadogMonitor -Name <String> -ResourceGroupName <String> -Location <String> [-SubscriptionId <String>]
  [-IdentityType <ManagedIdentityTypes>] [-MonitoringStatus <MonitoringStatus>] [-OrganizationApiKey <String>]
  [-OrganizationApplicationKey <String>] [-OrganizationEnterpriseAppId <String>]
  [-OrganizationLinkingAuthCode <String>] [-OrganizationLinkingClientId <String>]
@@ -29,11 +29,11 @@ Create a monitor resource.
 
 ### Example 1: Create a monitor resource
 ```powershell
-PS C:\> New-AzDataDogMonitor -ResourceGroupName azure-rg-test -Name datadog-pwsh01 -SkuName 'drawdown_testing_20200904_Monthly' -Location 'eastus2euap' -UserInfoEmailAddress 'xxxx@microsoft.com' -UserInfoName 'user' -UserInfoPhoneNumber 'xxxxxxxxxxxx' -IdentityType SystemAssigned
+PS C:\> New-AzDatadogMonitor -ResourceGroupName azure-rg-test -Name Datadog-pwsh01 -SkuName 'drawdown_testing_20200904_Monthly' -Location 'eastus2euap' -UserInfoEmailAddress 'xxxx@microsoft.com' -UserInfoName 'user' -UserInfoPhoneNumber 'xxxxxxxxxxxx' -IdentityType SystemAssigned
 
 Location    Name           Type
 --------    ----           ----
-eastus2euap datadog-pwsh01 microsoft.datadog/monitors
+eastus2euap Datadog-pwsh01 microsoft.Datadog/monitors
 ```
 
 This command creates a monitor resource.
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 Identity type
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.ManagedIdentityTypes
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.ManagedIdentityTypes
 Parameter Sets: (All)
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Flag specifying if the resource monitoring is enabled or disabled.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.MonitoringStatus
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.MonitoringStatus
 Parameter Sets: (All)
 Aliases:
 
@@ -379,7 +379,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogMonitorResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogMonitorResource
 
 ## NOTES
 

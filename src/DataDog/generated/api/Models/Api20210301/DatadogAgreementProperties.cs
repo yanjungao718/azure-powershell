@@ -1,53 +1,53 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Extensions;
+    using static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Extensions;
 
     /// <summary>Terms properties.</summary>
     public partial class DatadogAgreementProperties :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementProperties,
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogAgreementPropertiesInternal
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementProperties,
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogAgreementPropertiesInternal
     {
 
         /// <summary>Backing field for <see cref="Accepted" /> property.</summary>
         private bool? _accepted;
 
         /// <summary>If any version of the terms have been accepted, otherwise false.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public bool? Accepted { get => this._accepted; set => this._accepted = value; }
 
         /// <summary>Backing field for <see cref="LicenseTextLink" /> property.</summary>
         private string _licenseTextLink;
 
         /// <summary>Link to HTML with Microsoft and Publisher terms.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string LicenseTextLink { get => this._licenseTextLink; set => this._licenseTextLink = value; }
 
         /// <summary>Backing field for <see cref="Plan" /> property.</summary>
         private string _plan;
 
         /// <summary>Plan identifier string.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string Plan { get => this._plan; set => this._plan = value; }
 
         /// <summary>Backing field for <see cref="PrivacyPolicyLink" /> property.</summary>
         private string _privacyPolicyLink;
 
         /// <summary>Link to the privacy policy of the publisher.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string PrivacyPolicyLink { get => this._privacyPolicyLink; set => this._privacyPolicyLink = value; }
 
         /// <summary>Backing field for <see cref="Product" /> property.</summary>
         private string _product;
 
         /// <summary>Product identifier string.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string Product { get => this._product; set => this._product = value; }
 
         /// <summary>Backing field for <see cref="Publisher" /> property.</summary>
         private string _publisher;
 
         /// <summary>Publisher identifier string.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string Publisher { get => this._publisher; set => this._publisher = value; }
 
         /// <summary>Backing field for <see cref="RetrieveDatetime" /> property.</summary>
@@ -56,14 +56,14 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// <summary>
         /// Date and time in UTC of when the terms were accepted. This is empty if Accepted is false.
         /// </summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public global::System.DateTime? RetrieveDatetime { get => this._retrieveDatetime; set => this._retrieveDatetime = value; }
 
         /// <summary>Backing field for <see cref="Signature" /> property.</summary>
         private string _signature;
 
         /// <summary>Terms signature.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Origin(Microsoft.Azure.PowerShell.Cmdlets.DataDog.PropertyOrigin.Owned)]
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Origin(Microsoft.Azure.PowerShell.Cmdlets.Datadog.PropertyOrigin.Owned)]
         public string Signature { get => this._signature; set => this._signature = value; }
 
         /// <summary>Creates an new <see cref="DatadogAgreementProperties" /> instance.</summary>
@@ -74,10 +74,10 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
     }
     /// Terms properties.
     public partial interface IDatadogAgreementProperties :
-        Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IJsonSerializable
+        Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IJsonSerializable
     {
         /// <summary>If any version of the terms have been accepted, otherwise false.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"If any version of the terms have been accepted, otherwise false.",
@@ -85,7 +85,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         PossibleTypes = new [] { typeof(bool) })]
         bool? Accepted { get; set; }
         /// <summary>Link to HTML with Microsoft and Publisher terms.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"Link to HTML with Microsoft and Publisher terms.",
@@ -93,7 +93,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         PossibleTypes = new [] { typeof(string) })]
         string LicenseTextLink { get; set; }
         /// <summary>Plan identifier string.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"Plan identifier string.",
@@ -101,7 +101,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         PossibleTypes = new [] { typeof(string) })]
         string Plan { get; set; }
         /// <summary>Link to the privacy policy of the publisher.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"Link to the privacy policy of the publisher.",
@@ -109,7 +109,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         PossibleTypes = new [] { typeof(string) })]
         string PrivacyPolicyLink { get; set; }
         /// <summary>Product identifier string.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"Product identifier string.",
@@ -117,7 +117,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         PossibleTypes = new [] { typeof(string) })]
         string Product { get; set; }
         /// <summary>Publisher identifier string.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"Publisher identifier string.",
@@ -127,7 +127,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// <summary>
         /// Date and time in UTC of when the terms were accepted. This is empty if Accepted is false.
         /// </summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"Date and time in UTC of when the terms were accepted. This is empty if Accepted is false.",
@@ -135,7 +135,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         PossibleTypes = new [] { typeof(global::System.DateTime) })]
         global::System.DateTime? RetrieveDatetime { get; set; }
         /// <summary>Terms signature.</summary>
-        [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Info(
+        [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Info(
         Required = false,
         ReadOnly = false,
         Description = @"Terms signature.",

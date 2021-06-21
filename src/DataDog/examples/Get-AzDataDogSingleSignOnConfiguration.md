@@ -1,32 +1,32 @@
-### Example 1: List the datadog single sign-on resource for the given Monitor
+### Example 1: List the Datadog single sign-on resource for the given Monitor
 ```powershell
-PS C:\> Get-AzDataDogSingleSignOnConfiguration -ResourceGroupName azure-rg-datadog -MonitorName datadog
+PS C:\> Get-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/singlesignonconfigurations
+default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-This command lists the datadog single sign-on resource for the given Monitor.
+This command lists the Datadog single sign-on resource for the given Monitor.
 
-### Example 2: Gets the datadog single sign-on resource for the given Monitor
+### Example 2: Gets the Datadog single sign-on resource for the given Monitor
 ```powershell
-PS C:\> Get-AzDataDogSingleSignOnConfiguration -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default'
+PS C:\> Get-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default'
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/singlesignonconfigurations
+default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-This command gets the datadog single sign-on resource for the given Monitor.
+This command gets the Datadog single sign-on resource for the given Monitor.
 
-### Example 3: Gets the datadog single sign-on resource for the given Monitor by pipeline
+### Example 3: Gets the Datadog single sign-on resource for the given Monitor by pipeline
 ```powershell
-PS C:\> New-AzDataDogSingleSignOnConfiguration -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000 | Get-AzDataDogSingleSignOnConfiguration
+PS C:\> New-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000 | Get-AzDatadogSingleSignOnConfiguration
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/singlesignonconfigurations
+default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
-This command gets the datadog single sign-on resource for the given Monitor by pipeline.
+This command gets the Datadog single sign-on resource for the given Monitor by pipeline.

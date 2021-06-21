@@ -3,10 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-using Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json;
+using Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json;
 using System;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime
 {
     public interface IJsonSerializable
     {
@@ -128,7 +128,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime
         internal static JsonNode ToJsonValue(object value)
         {
             // things that implement our interface are preferred. 
-            if (value is Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.IJsonSerializable jsonSerializable)
+            if (value is Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.IJsonSerializable jsonSerializable)
             {
                 return jsonSerializable.ToJson();
             }
@@ -148,7 +148,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime
             // dictionaries are objects that should be able to serialize
             if (value is System.Collections.Generic.IDictionary<string, object> dictionary)
             {
-                return Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.JsonSerializable.ToJson(dictionary, null);
+                return Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.JsonSerializable.ToJson(dictionary, null);
             }
 
             // enumerable collections are handled like arrays (again, fallback to ToJson()/ToJsonString() or literal JsonString) 

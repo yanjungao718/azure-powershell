@@ -5,7 +5,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json
 {
     internal class SerializationOptions
     {

@@ -39,10 +39,10 @@
   Write-Information "Loaded Module '$($accountsModule.Name)'"
 
   # Load the private module dll
-  $null = Import-Module -Name (Join-Path $PSScriptRoot './bin/Az.DataDog.private.dll')
+  $null = Import-Module -Name (Join-Path $PSScriptRoot './bin/Az.Datadog.private.dll')
 
   # Get the private module's instance
-  $instance = [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Module]::Instance
+  $instance = [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Module]::Instance
 
   # Ask for the shared functionality table
   $VTable = Register-AzModule
@@ -67,7 +67,7 @@
 
  
   # Load the custom module
-  $customModulePath = Join-Path $PSScriptRoot './custom/Az.DataDog.custom.psm1'
+  $customModulePath = Join-Path $PSScriptRoot './custom/Az.Datadog.custom.psm1'
   if(Test-Path $customModulePath) {
     $null = Import-Module -Name $customModulePath
   }

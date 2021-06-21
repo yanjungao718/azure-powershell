@@ -1,9 +1,9 @@
 # region Generated 
   # Load the private module dll
-  $null = Import-Module -PassThru -Name (Join-Path $PSScriptRoot '..\bin\Az.DataDog.private.dll')
+  $null = Import-Module -PassThru -Name (Join-Path $PSScriptRoot '..\bin\Az.Datadog.private.dll')
 
   # Get the private module's instance
-  $instance = [Microsoft.Azure.PowerShell.Cmdlets.DataDog.Module]::Instance
+  $instance = [Microsoft.Azure.PowerShell.Cmdlets.Datadog.Module]::Instance
 
   # Export nothing to clear implicit exports
   Export-ModuleMember

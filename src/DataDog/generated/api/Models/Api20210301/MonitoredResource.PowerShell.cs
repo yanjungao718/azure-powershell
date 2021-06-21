@@ -1,6 +1,6 @@
-namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
+namespace Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301
 {
-    using Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.PowerShell;
+    using Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.PowerShell;
 
     /// <summary>
     /// The properties of a resource currently being monitored by the Datadog monitor resource.
@@ -58,27 +58,27 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         partial void OverrideToString(ref string stringResult, ref bool returnNow);
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResource"
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResource"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource DeserializeFromDictionary(global::System.Collections.IDictionary content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource DeserializeFromDictionary(global::System.Collections.IDictionary content)
         {
             return new MonitoredResource(content);
         }
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResource"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResource"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
         /// <returns>
-        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource" />.
+        /// an instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource" />.
         /// </returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource DeserializeFromPSObject(global::System.Management.Automation.PSObject content)
         {
             return new MonitoredResource(content);
         }
@@ -88,32 +88,10 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
         /// </summary>
         /// <param name="jsonText">a string containing a JSON serialized instance of this model.</param>
         /// <returns>an instance of the <see cref="className" /> model class.</returns>
-        public static Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.Json.JsonNode.Parse(jsonText));
+        public static Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource FromJsonString(string jsonText) => FromJson(Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.Json.JsonNode.Parse(jsonText));
 
         /// <summary>
-        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResource"
-        /// />.
-        /// </summary>
-        /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
-        internal MonitoredResource(global::System.Collections.IDictionary content)
-        {
-            bool returnNow = false;
-            BeforeDeserializeDictionary(content, ref returnNow);
-            if (returnNow)
-            {
-                return;
-            }
-            // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).Id = (string) content.GetValueForProperty("Id",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).Id, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric = (bool?) content.GetValueForProperty("SendingMetric",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus = (string) content.GetValueForProperty("ReasonForMetricsStatus",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog = (bool?) content.GetValueForProperty("SendingLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus = (string) content.GetValueForProperty("ReasonForLogsStatus",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus, global::System.Convert.ToString);
-            AfterDeserializeDictionary(content);
-        }
-
-        /// <summary>
-        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.MonitoredResource"
+        /// Deserializes a <see cref="global::System.Management.Automation.PSObject" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResource"
         /// />.
         /// </summary>
         /// <param name="content">The global::System.Management.Automation.PSObject content that should be used.</param>
@@ -126,18 +104,40 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301
                 return;
             }
             // actually deserialize
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).Id = (string) content.GetValueForProperty("Id",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).Id, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric = (bool?) content.GetValueForProperty("SendingMetric",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus = (string) content.GetValueForProperty("ReasonForMetricsStatus",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus, global::System.Convert.ToString);
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog = (bool?) content.GetValueForProperty("SendingLog",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
-            ((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus = (string) content.GetValueForProperty("ReasonForLogsStatus",((Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).Id = (string) content.GetValueForProperty("Id",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).Id, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric = (bool?) content.GetValueForProperty("SendingMetric",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus = (string) content.GetValueForProperty("ReasonForMetricsStatus",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog = (bool?) content.GetValueForProperty("SendingLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus = (string) content.GetValueForProperty("ReasonForLogsStatus",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus, global::System.Convert.ToString);
             AfterDeserializePSObject(content);
+        }
+
+        /// <summary>
+        /// Deserializes a <see cref="global::System.Collections.IDictionary" /> into a new instance of <see cref="Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.MonitoredResource"
+        /// />.
+        /// </summary>
+        /// <param name="content">The global::System.Collections.IDictionary content that should be used.</param>
+        internal MonitoredResource(global::System.Collections.IDictionary content)
+        {
+            bool returnNow = false;
+            BeforeDeserializeDictionary(content, ref returnNow);
+            if (returnNow)
+            {
+                return;
+            }
+            // actually deserialize
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).Id = (string) content.GetValueForProperty("Id",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).Id, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric = (bool?) content.GetValueForProperty("SendingMetric",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingMetric, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus = (string) content.GetValueForProperty("ReasonForMetricsStatus",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForMetricsStatus, global::System.Convert.ToString);
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog = (bool?) content.GetValueForProperty("SendingLog",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).SendingLog, (__y)=> (bool) global::System.Convert.ChangeType(__y, typeof(bool)));
+            ((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus = (string) content.GetValueForProperty("ReasonForLogsStatus",((Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResourceInternal)this).ReasonForLogsStatus, global::System.Convert.ToString);
+            AfterDeserializeDictionary(content);
         }
 
         /// <summary>Serializes this instance to a json string.</summary>
 
         /// <returns>a <see cref="System.String" /> containing this model serialized to JSON text.</returns>
-        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.DataDog.Runtime.SerializationMode.IncludeAll)?.ToString();
+        public string ToJsonString() => ToJson(null, Microsoft.Azure.PowerShell.Cmdlets.Datadog.Runtime.SerializationMode.IncludeAll)?.ToString();
 
         public override string ToString()
         {

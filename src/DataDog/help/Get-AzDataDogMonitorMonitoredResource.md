@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/get-azdatadogmonitormonitoredresource
 schema: 2.0.0
 ---
 
-# Get-AzDataDogMonitorMonitoredResource
+# Get-AzDatadogMonitorMonitoredResource
 
 ## SYNOPSIS
 List the resources currently being monitored by the Datadog monitor resource.
@@ -13,7 +13,7 @@ List the resources currently being monitored by the Datadog monitor resource.
 ## SYNTAX
 
 ```
-Get-AzDataDogMonitorMonitoredResource -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
+Get-AzDatadogMonitorMonitoredResource -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ List the resources currently being monitored by the Datadog monitor resource.
 
 ### Example 1: List the resources currently being monitored by the Datadog monitor resource
 ```powershell
-PS C:\> Get-AzDataDogMonitorMonitoredResource -ResourceGroupName azure-rg-datadog -Name datadog
+PS C:\> Get-AzDatadogMonitorMonitoredResource -ResourceGroupName azure-rg-Datadog -Name Datadog
 
 ```
 
@@ -131,7 +131,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IMonitoredResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IMonitoredResource
 
 ## NOTES
 

@@ -1,11 +1,11 @@
 ---
 external help file:
-Module Name: Az.DataDog
+Module Name: Az.Datadog
 online version: https://docs.microsoft.com/powershell/module/az.datadog/new-azdatadogsinglesignonconfiguration
 schema: 2.0.0
 ---
 
-# New-AzDataDogSingleSignOnConfiguration
+# New-AzDatadogSingleSignOnConfiguration
 
 ## SYNOPSIS
 Configures single-sign-on for this resource.
@@ -14,14 +14,14 @@ Configures single-sign-on for this resource.
 
 ### CreateExpanded (Default)
 ```
-New-AzDataDogSingleSignOnConfiguration -MonitorName <String> -Name <String> -ResourceGroupName <String>
+New-AzDatadogSingleSignOnConfiguration -MonitorName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-EnterpriseAppId <String>] [-SingleSignOnState <SingleSignOnStates>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-AzDataDogSingleSignOnConfiguration -InputObject <IDataDogIdentity> [-EnterpriseAppId <String>]
+New-AzDatadogSingleSignOnConfiguration -InputObject <IDatadogIdentity> [-EnterpriseAppId <String>]
  [-SingleSignOnState <SingleSignOnStates>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
@@ -33,22 +33,22 @@ Configures single-sign-on for this resource.
 
 ### Example 1: Configures single-sign-on for Data monitor resource
 ```powershell
-PS C:\> New-AzDataDogSingleSignOnConfiguration -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
+PS C:\> New-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' -SingleSignOnState Enable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/singlesignonconfigurations
+default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
 This command configures single-sign-on for Data monitor resource.
 
 ### Example 2: Configures single-sign-on for Data monitor resource by pipeline
 ```powershell
-PS C:\> Get-AzDataDogSingleSignOnConfiguration -ResourceGroupName azure-rg-datadog -MonitorName datadog -Name 'default' | New-AzDataDogSingleSignOnConfiguration -SingleSignOnState Disable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
+PS C:\> Get-AzDatadogSingleSignOnConfiguration -ResourceGroupName azure-rg-Datadog -MonitorName Datadog -Name 'default' | New-AzDatadogSingleSignOnConfiguration -SingleSignOnState Disable -EnterpriseAppId 00000000-0000-0000-0000-000000000000
 
 Name    Type
 ----    ----
-default microsoft.datadog/monitors/singlesignonconfigurations
+default microsoft.Datadog/monitors/singlesignonconfigurations
 ```
 
 This command configures single-sign-on for Data monitor resource by pipeline.
@@ -105,7 +105,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 Parameter Sets: CreateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 Various states of the SSO resource
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.DataDog.Support.SingleSignOnStates
+Type: Microsoft.Azure.PowerShell.Cmdlets.Datadog.Support.SingleSignOnStates
 Parameter Sets: (All)
 Aliases:
 
@@ -243,11 +243,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.IDataDogIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.IDatadogIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.DataDog.Models.Api20210301.IDatadogSingleSignOnResource
+### Microsoft.Azure.PowerShell.Cmdlets.Datadog.Models.Api20210301.IDatadogSingleSignOnResource
 
 ## NOTES
 
@@ -258,7 +258,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IDataDogIdentity>: Identity Parameter
+INPUTOBJECT <IDatadogIdentity>: Identity Parameter
   - `[ConfigurationName <String>]`: Configuration name
   - `[Id <String>]`: Resource identity path
   - `[MonitorName <String>]`: Monitor resource name
