@@ -39,6 +39,10 @@
 	- Added `Remove-AzSynapseWorkspacePackage` cmdlet
 	- Updated `New-AzSynapseSparkPool` cmdlet to drop parameter `-LibraryRequirementsFilePath`
 	- Updated `Updated-AzSynapseSparkPool` cmdlet to add parameter `-Package` and `-PackageAction`
+* Added support for Synapse sql script
+	- Added `Get-AzSynapseSqlScript` cmdlet
+	- Added `Remove-AzSynapseSqlScript` cmdlet
+	- Added `Export-AzSynapseSqlScript` cmdlet
 
 ## Version 0.14.0
 * Added parameter `-ManagedResourceGroupName` for the `New-AzSynapseWorkspace` cmdlet
