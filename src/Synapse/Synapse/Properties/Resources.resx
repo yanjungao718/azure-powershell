@@ -743,4 +743,10 @@ Failed: {2}.</value>
   <data name="FailedToValidatePackageParameter" xml:space="preserve">
     <value>-PackageAction and -Package must be specified at the same time or neither of them should be.</value>
   </data>
+  <data name="RemoveSynapseSqlScript" xml:space="preserve">
+    <value>Are you sure you want to remove Synapse SQL Script '{0}' under workspace '{1}'</value>
+  </data>
+  <data name="RemovingSynapseSqlScript" xml:space="preserve">
+    <value>Are you sure you want to remove Synapse SQL Script '{0}' under workspace '{1}'</value>
+  </data>
 </root>

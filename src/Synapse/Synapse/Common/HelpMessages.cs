@@ -500,5 +500,11 @@ For more information, see https://docs.microsoft.com/en-us/sql/relational-databa
         public const string WorkspacePackages = "The workspace packages.";
 
         public const string PackageAction = "Package action must be specified when you add or remove a workspace package from a Apache Spark pool.";
+
+        public const string SqlScriptName = "The sql script name.";
+
+        public const string SqlScriptObject = "The sql script object.";
+
+        public const string SqlScriptOutputFolder = "The folder where the sql scripts should be placed.";
     }
 }

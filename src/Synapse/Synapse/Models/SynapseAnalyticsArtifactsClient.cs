@@ -41,6 +41,7 @@ namespace Microsoft.Azure.Commands.Synapse.Models
         private readonly DataFlowClient _dataFlowClient;
         private readonly BigDataPoolsClient _bigDataPoolsClient;
         private readonly SparkJobDefinitionClient _sparkJobDefinitionClient;
+        private readonly SqlScriptClient _sqlScriptClient;
 
         public SynapseAnalyticsArtifactsClient(string workspaceName, IAzureContext context)
         {
@@ -63,6 +64,7 @@ namespace Microsoft.Azure.Commands.Synapse.Models
             _dataFlowClient = new DataFlowClient(uri, new AzureSessionCredential(context));
             _bigDataPoolsClient = new BigDataPoolsClient(uri, new AzureSessionCredential(context));
             _sparkJobDefinitionClient = new SparkJobDefinitionClient(uri, new AzureSessionCredential(context));
+            _sqlScriptClient = new SqlScriptClient(uri, new AzureSessionCredential(context));
         }
 
         #region pipeline
@@ -320,6 +322,23 @@ namespace Microsoft.Azure.Commands.Synapse.Models
             }).Poll();
         }
 
+        #endregion
+
+        #region SqlScript
+        public void DeleteSqlScript(string sqlscriptName)
+        {
+            _sqlScriptClient.StartDeleteSqlScript(sqlscriptName).Poll();
+        }
+
+        public SqlScriptResource GetSqlScript(string sqlscriptName)
+        {
+            return _sqlScriptClient.GetSqlScript(sqlscriptName);
+        }
+
+        public Pageable<SqlScriptResource> GetSqlScriptsByWorkspace()
+        {
+            return _sqlScriptClient.GetSqlScriptsByWorkspace();
+        }
         #endregion
 
         #region helpers

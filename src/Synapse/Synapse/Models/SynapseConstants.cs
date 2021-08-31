@@ -189,6 +189,8 @@ namespace Microsoft.Azure.Commands.Synapse.Models
 
         public const string WorkspacePackage = nameof(WorkspacePackage);
 
+        public const string SqlScript = nameof(SqlScript);
+
         public static Dictionary<string, ComputeNodeSize> ComputeNodeSizes = new Dictionary<string, ComputeNodeSize>
         {
             {
