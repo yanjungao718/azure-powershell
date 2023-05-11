@@ -15,6 +15,7 @@
 using Azure;
 using Azure.Analytics.Synapse.Artifacts;
 using Azure.Analytics.Synapse.Artifacts.Models;
+using Azure.Core;
 using Microsoft.Azure.Commands.Common.Authentication.Abstractions;
 using Microsoft.Azure.Commands.Common.Exceptions;
 using Microsoft.Azure.Commands.Synapse.Common;
@@ -34,6 +35,7 @@ namespace Microsoft.Azure.Commands.Synapse.Models
         private readonly PipelineRunClient _pipelineRunClient;
         private readonly LinkedServiceClient _linkedServiceClient;
         private readonly NotebookClient _notebookClient;
+        private readonly NotebookClient _notebookLongTimeoutClient;
         private readonly TriggerClient _triggerClient;
         private readonly TriggerRunClient _triggerRunClient;
         private readonly DatasetClient _datasetClient;
@@ -62,6 +64,11 @@ namespace Microsoft.Azure.Commands.Synapse.Models
             _pipelineRunClient = new PipelineRunClient(uri, new AzureSessionCredential(context));
             _linkedServiceClient = new LinkedServiceClient(uri, new AzureSessionCredential(context));
             _notebookClient = new NotebookClient(uri, new AzureSessionCredential(context));
+
+            ArtifactsClientOptions artifactsClientOptions = new ArtifactsClientOptions();
+            artifactsClientOptions.Retry.NetworkTimeout = TimeSpan.FromSeconds(300);
+            _notebookLongTimeoutClient = new NotebookClient(uri, new AzureSessionCredential(context), artifactsClientOptions);
+
             _triggerClient = new TriggerClient(uri, new AzureSessionCredential(context));
             _triggerRunClient = new TriggerRunClient(uri, new AzureSessionCredential(context));
             _datasetClient = new DatasetClient(uri, new AzureSessionCredential(context));
@@ -199,7 +206,7 @@ namespace Microsoft.Azure.Commands.Synapse.Models
 
         public Pageable<NotebookResource> GetNotebooksByWorkspace()
         {
-            return _notebookClient.GetNotebooksByWorkspace();
+            return _notebookLongTimeoutClient.GetNotebooksByWorkspace();
         }
 
         #endregion
